@@ -22,8 +22,8 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('app', '../frontend/app.jsx')
-    .addEntry("tailwind","./assets/tailwind.js")
-    .addEntry("styles","./assets/css/styles.css")
+    .addEntry("tailwind", "./assets/tailwind.js")
+    .addEntry("styles", "./assets/css/styles.css")
 
     // ENV VAR REACT
     .addPlugin(new Dotenv({
