@@ -90,7 +90,7 @@ const Home = () => {
       <div className="grid grid-cols-2">
         {posts.map((post) => {
           return (
-            <div key={post.id} className="bg-red-500">
+            <div key={post.id} className="bg-red-500 border lg">
               Nom: {post.name}
               <br />
               Description: {post.description}
