@@ -3,6 +3,7 @@
 namespace App\DataFixtures;
 use App\Entity\Products;
 use App\Entity\Articles;
+use App\Entity\Vidéos;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
@@ -20,9 +21,15 @@ class AppFixtures extends Fixture
             $article->setTitle("Titre de l'articles:".$i);
             $article->setDescription('Lorem');
             
+            $vidéo = new Vidéos();
+            $vidéo->setVidéo('/FrontSide/frontend/src/vidéo skate/RIDE.mp4'.$i);
+            $vidéo->setTitle("Titre de la vidéo:".$i);
+            $vidéo->setDescription('Lorem'.$i);
+
             $manager->persist($product);
             $manager->persist($article);
-    
+            $manager->persist($vidéo);
+
 }
 $manager->flush();
 
