@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: VidosRepository::class)]
 #[ApiResource]
-class Vidéos
+class Vidos
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]

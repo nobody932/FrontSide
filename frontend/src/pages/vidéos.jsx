@@ -23,10 +23,10 @@ const Vidéos =()=>{
           {vidéos.map((vidéo) => {
             return (
               <div key={vidéo.id} className="bg-purple-500  border lg">
-                {vidéo.vidéos};
+              <video src={vidéo.vidéos}></video> 
                 <h1 className="text-white italic font-bold">Titre : {vidéo.title}</h1>
                 <br />
-                description: {vidéo.description}
+               <p>description: {vidéo.description}</p> 
                 <br />
                 <br />
               </div>
