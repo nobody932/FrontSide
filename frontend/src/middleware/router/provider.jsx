@@ -2,7 +2,7 @@ import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../../pages/home";
 import Articles from "../../pages/articles";
-import Vidéos from "../../pages/vidéos";
+import Movies from "../../pages/movies";
 // import Profil from "../../pages/Dashboard";
 
 export const Provider = createBrowserRouter([
@@ -15,7 +15,7 @@ export const Provider = createBrowserRouter([
       element:<Articles/>,
    },
    {
-    path:"/vidos",
-   element:<Vidéos/>,
+    path:"/movies",
+   element:<Movies/>,
 },   
 ]);
