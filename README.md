@@ -25,6 +25,6 @@ Vendredi: Terminer le `backend`, vérifier la base de données `MySQL`.
 
 ## Les liens 📎 
 
-[GitHub 🗃️](https://github.com/nobody932/FrontSide.git)
+[GitHub 🗃️](https://github.com/nobody932/FrontSide.git)  
 [Portfolio](https://alerte-portfolio.netlify.app/)
 
