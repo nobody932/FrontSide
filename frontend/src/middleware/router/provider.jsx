@@ -15,7 +15,7 @@ export const Provider = createBrowserRouter([
       element:<Articles/>,
    },
    {
-    path:"/vidéos",
+    path:"/vidos",
    element:<Vidéos/>,
 },   
 ]);

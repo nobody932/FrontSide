@@ -68,8 +68,9 @@ const Home = () => {
 
   return (
     <>
+    <div >
       <form action="">
-        <div>
+        <div >
           <label htmlFor="">Nom</label>
           <input type="text" onChange={OnChangeName} />
         </div>
@@ -87,10 +88,12 @@ const Home = () => {
           </button>
         </div>
       </form>
-      <div className="grid grid-cols-2">
+      </div>
+      <br />
+      <div className="grid grid-cols-4 space-x-7 bg-red-500">
         {posts.map((post) => {
           return (
-            <div key={post.id} className="bg-red-500 border lg">
+            <div key={post.id} className="border">
               Nom: {post.name}
               <br />
               Description: {post.description}

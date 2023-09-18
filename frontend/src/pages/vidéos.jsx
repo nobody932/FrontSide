@@ -5,7 +5,7 @@ const Vidéos =()=>{
     const [vidéos, setVidéos] = useState([]);
     useEffect(() => {
       axios
-        .get("/api/vidéos")
+        .get("/api/movies")
         .then((response) => {
           console.log(response.data["hydra:member"]);
           setVidéos(response.data["hydra:member"]);
@@ -19,7 +19,7 @@ const Vidéos =()=>{
     }, []);
     return (
       <>
-        <div className="grid grid-cols-3 mx-5 space-x-3 ">
+        <div className="grid grid-cols-2 mx-5 space-x-3 ">
           {vidéos.map((vidéo) => {
             return (
               <div key={vidéo.id} className="bg-purple-500  border lg">
