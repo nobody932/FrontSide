@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import process from "process";
+import NavBar from "../components/tools/navbar-des";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -68,6 +69,9 @@ const Home = () => {
 
   return (
     <>
+    <div>
+      <NavBar/>
+    </div>
     <div >
       <form action="">
         <div >
