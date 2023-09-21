@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Home from "../../pages/home";
+import Articles from "../../pages/articles";
+import Movies from "../../pages/movies";
 
 const NavBar = () => (
-  <nav className=" bg-red-800 ">
+  <nav className=" bg-red-800  ">
     <ul >
       <div>
         <img src="/FrontSide/frontend/src/images/1.png" alt="" srcset="" />

@@ -72,7 +72,7 @@ const Home = () => {
     <div>
       <NavBar/>
     </div>
-    <div >
+    <div  >
       <form action="">
         <div >
           <label htmlFor="">Nom</label>
@@ -94,7 +94,7 @@ const Home = () => {
       </form>
       </div>
       <br />
-      <div className="grid grid-cols-4 space-x-7 bg-red-500">
+      <div className="p-10 grid grid-cols-4 space-x-7 bg-red-500">
         {posts.map((post) => {
           return (
             <div key={post.id} className="border">
