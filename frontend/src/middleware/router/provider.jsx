@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "../../pages/home";
 import Articles from "../../pages/articles";
 import Movies from "../../pages/movies";
+import News from "../../pages/news";
 // import Profil from "../../pages/Dashboard";
 
 export const Provider = createBrowserRouter([
@@ -17,5 +18,9 @@ export const Provider = createBrowserRouter([
    {
     path:"/movies",
    element:<Movies/>,
+},   
+{
+  path:"/news",
+ element:<News/>,
 },   
 ]);

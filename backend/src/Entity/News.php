@@ -21,8 +21,12 @@ class News
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $prix = null;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $images = null;
+
+
     #[ORM\Column(length: 255)]
-    private ?string $descrpition = null;
+    private ?string $description = null;
 
     public function getId(): ?int
     {
@@ -53,14 +57,26 @@ class News
         return $this;
     }
 
-    public function getDescrpition(): ?string
+    public function getDescription(): ?string
     {
-        return $this->descrpition;
+        return $this->description;
     }
 
-    public function setDescrpition(string $descrpition): static
+    public function setDescription(string $description): static
     {
-        $this->descrpition = $descrpition;
+        $this->description = $description;
+
+        return $this;
+    }
+
+    public function getImages(): ?string
+    {
+        return $this->images;
+    }
+
+    public function setImages(?string $images): static
+    {
+        $this->images = $images;
 
         return $this;
     }

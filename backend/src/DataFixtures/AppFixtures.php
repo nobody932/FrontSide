@@ -31,8 +31,8 @@ class AppFixtures extends Fixture
             $news= new News();
             $news->setProduits('Titre du produit:'.$i);
             $news->setPrix('Prix:'.$i);
-            $news->setDescrpition('Lorem');
-
+            $news->setDescription('Lorem');
+            $news->setImages('/FrontSide/backend/public/images');
 
             $manager->persist($product);
             $manager->persist($article);

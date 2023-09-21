@@ -7,7 +7,8 @@ useEffect(() => {
     axios
     .get ("/api/news")
     .then((response)=> {
-        SetNews(response.data[""]);
+        console.log(response.data["hydra:member"]);
+        SetNews(response.data["hydra:member"]);
     })
     .catch((error)=> {
         console.log(error);
@@ -18,15 +19,16 @@ useEffect(() => {
 },[]);
 return(
     <>
-    <div className="grid grid-cols-3 mx-5 space-x-3 ">
+    <div className="grid grid-cols-3 mx-5 space-x-3 space-y-5 ">
       {news.map((news) => {
         return (
           <div key={news.id} className="bg-purple-500  border lg">
-            <img src={news.image} alt="" />
+            <img src={news.produits} alt="" />
             <h1 className="text-white italic font-bold">Titre : {article.title}</h1>
             <br />
             description: {news.description}
             <br />
+            Prix: {news.prix}
             <br />
           </div>
         );
