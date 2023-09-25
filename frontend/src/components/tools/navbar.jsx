@@ -3,20 +3,20 @@ import { Nav } from 'react-adaptive-navbar';
 import { BrowserRouter } from 'react-router-dom';
 
 const LINKS = ()=> [{
-        display: "Empty",
-        url: "/1",
+        display: "Articles",
+        url: "/src/pages/articles.jsx",
     },
     {
-        display: "List",
-        url: "/2",
+        display: "News",
+        url: "/FrontSide/frontend/src/pages/news.jsx",
     },
     {
-        display: "Failed",
-        url: "/3",
+        display: "Movies",
+        url: "/FrontSide/frontend/src/pages/movies.jsx",
     },
     {
-        display: "Failed",
-        url: "/4",
+        display: "Teams",
+        url: "/FrontSide/frontend/src/pages/teams.jsx",
     },
     {
         display: "Failed",

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import AOS from "../components/tools/aos/aos";
+import NavBar from "../components/tools/navbar-des";
 
 const Movies =()=>{
     const [movies, setMovies] = useState([]);
@@ -18,12 +20,15 @@ const Movies =()=>{
         });
     }, []);
     return (
-      <>
-        <div className="grid grid-cols-2 mx-5 space-x-3 ">
+      <><div><NavBar/></div>
+        <div className="grid grid-cols-2 mx-5 space-x-3 "><AOS/>
           {movies.map((movies) => {
             return (
-              <div key={movies.id} className="bg-purple-500  border lg">
-              <video src={movies.vidéos} alt=""></video> 
+              <div data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0" key={movies.id} className="bg-purple-500  border lg">
+              <video src={movies.part} ></video> 
                 <h1 className="text-white italic font-bold">Titre : {movies.title}</h1>
                 <br />
                <p>description: {movies.description}</p> 

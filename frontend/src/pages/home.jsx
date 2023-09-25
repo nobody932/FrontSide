@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import process from "process";
 import NavBar from "../components/tools/navbar-des";
+import Aos from "aos";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -68,36 +69,36 @@ const Home = () => {
   };
 
   return (
-    <>
-    <div>
-      <NavBar/>
-    </div>
-    <div  >
-      <form action="">
-        <div >
-          <label htmlFor="">Nom</label>
-          <input type="text" onChange={OnChangeName} />
-        </div>
-        <div>
-          <label htmlFor="">Description</label>
-          <input type="text" onChange={OnChangeDesc} />
-        </div>
-        <div>
-          <label htmlFor="">Prix</label>
-          <input type="text" onChange={OnChangePrice} />
-        </div>
-        <div>
-          <button type="button" onClick={() => SubmitForm()}>
-            Envoyer
-          </button>
-        </div>
-      </form>
+    <><section>
+      <div>
+        <NavBar />
+      </div>
+      <div>
+        <form action="">
+          <div>
+            <label htmlFor="">Nom</label>
+            <input className="border" type="text" onChange={OnChangeName} />
+          </div>
+          <div>
+            <label htmlFor="">Description</label>
+            <input className="border" type="text" onChange={OnChangeDesc} />
+          </div>
+          <div>
+            <label htmlFor="">Prix</label>
+            <input className="border" type="text" onChange={OnChangePrice} />
+          </div>
+          <div>
+            <button className="flex justify-center" type="button" onClick={() => SubmitForm()}>
+              Envoyer
+            </button>
+          </div>
+        </form>
       </div>
       <br />
-      <div className="p-10 grid grid-cols-4 space-x-7 bg-red-500">
+      <div className=" contain p-10 grid grid-cols-4 space-x-7 space-y-4  bg-red-500">
         {posts.map((post) => {
           return (
-            <div key={post.id} className="border">
+            <div key={post.id} className="border text-center  ">
               Nom: {post.name}
               <br />
               Description: {post.description}
@@ -117,7 +118,7 @@ const Home = () => {
         })}
         ;
       </div>
-    </>
+   </section> </>
   );
 };
 export default Home;

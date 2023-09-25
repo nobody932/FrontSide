@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import NavBar from "../components/tools/navbar-des";
 
 const Articles = () => {
   const [articles, setArticles] = useState([]);
@@ -20,12 +21,17 @@ const Articles = () => {
 
   return (
     <>
+      <div>
+        <NavBar />
+      </div>
       <div className="grid grid-cols-3 mx-5 space-x-3 ">
         {articles.map((article) => {
           return (
             <div key={article.id} className="bg-purple-500  border lg">
               <img src={article.image} alt="" />
-              <h1 className="text-white italic font-bold">Titre : {article.title}</h1>
+              <h1 className="text-white italic font-bold">
+                Titre : {article.title}
+              </h1>
               <br />
               description: {article.description}
               <br />

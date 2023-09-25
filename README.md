@@ -12,7 +12,7 @@ Dans un deuxième temps  j'ai attaquer le `backend` mon projet, pour commencer j
 
 ### Dead-Line ☠️ 
 
-Lundi: Faire tous les `controlllers`, les `entités`des pages (Régler tous les bugs d'affichage et les problèmes de routes).
+Lundi: Sécuriser api admin sécuriser les roots api 
 
 Mardi: Mettre à jours les bases de données sur `MYSQL`.
 

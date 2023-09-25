@@ -4,6 +4,7 @@ import Home from "../../pages/home";
 import Articles from "../../pages/articles";
 import Movies from "../../pages/movies";
 import News from "../../pages/news";
+import Teams from "../../pages/teams";
 // import Profil from "../../pages/Dashboard";
 
 export const Provider = createBrowserRouter([
@@ -22,5 +23,9 @@ export const Provider = createBrowserRouter([
 {
   path:"/news",
  element:<News/>,
+},
+{
+  path:"/teams",
+ element:<Teams/>,
 },   
 ]);
