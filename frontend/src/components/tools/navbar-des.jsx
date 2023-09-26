@@ -1,9 +1,11 @@
 "use client"
 import React from "react";
 import { Link } from "react-router-dom";
-import Home from "../../pages/home";
 import Articles from "../../pages/articles";
+import Home from "../../pages/home";
 import Movies from "../../pages/movies";
+import News from "../../pages/news";
+import Teams from"../../pages/teams";
 
 const NavBar = () => (
   <nav className=" gradient-background  bg-red-800 py-3 flex justify-center ">

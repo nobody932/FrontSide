@@ -3,15 +3,8 @@
   "build/tailwind.js": "http://localhost:8080/build/tailwind.js",
   "build/styles.js": "http://localhost:8080/build/styles.js",
   "build/runtime.js": "http://localhost:8080/build/runtime.js",
-  "build/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_localhost_por-3885b1.js": "http://localhost:8080/build/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_localhost_por-3885b1.js",
-  "build/vendors-frontend_node_modules_core-js_modules_es_array_filter_js-frontend_node_modules_core-j-064f7b.js": "http://localhost:8080/build/vendors-frontend_node_modules_core-js_modules_es_array_filter_js-frontend_node_modules_core-j-064f7b.js",
-  "build/assets_css_styles_css.css": "http://localhost:8080/build/assets_css_styles_css.css",
-  "build/vendors-frontend_node_modules_core-js_modules_es_array_from_js-frontend_node_modules_core-js_-9b1dcd.js": "http://localhost:8080/build/vendors-frontend_node_modules_core-js_modules_es_array_from_js-frontend_node_modules_core-js_-9b1dcd.js",
-  "build/vendors-frontend_node_modules_aos_dist_aos_js-frontend_node_modules_core-js_modules_es_array_-aeb152.js": "http://localhost:8080/build/vendors-frontend_node_modules_aos_dist_aos_js-frontend_node_modules_core-js_modules_es_array_-aeb152.js",
   "build/vendors-node_modules_mini-css-extract-plugin_dist_hmr_hotModuleReplacement_js-node_modules_we-857c62.js": "http://localhost:8080/build/vendors-node_modules_mini-css-extract-plugin_dist_hmr_hotModuleReplacement_js-node_modules_we-857c62.js",
   "build/vendors-frontend_node_modules_aos_dist_aos_css-frontend_node_modules_aos_dist_aos_js-frontend-4acfce.css": "http://localhost:8080/build/vendors-frontend_node_modules_aos_dist_aos_css-frontend_node_modules_aos_dist_aos_js-frontend-4acfce.css",
   "build/vendors-frontend_node_modules_aos_dist_aos_css-frontend_node_modules_aos_dist_aos_js-frontend-4acfce.js": "http://localhost:8080/build/vendors-frontend_node_modules_aos_dist_aos_css-frontend_node_modules_aos_dist_aos_js-frontend-4acfce.js",
-  "build/vendors-frontend_node_modules_react-dom_client_js-frontend_node_modules_react-router_dist_index_js.js": "http://localhost:8080/build/vendors-frontend_node_modules_react-dom_client_js-frontend_node_modules_react-router_dist_index_js.js",
-  "build/vendors-frontend_node_modules_aos_dist_aos_css-frontend_node_modules_aos_dist_aos_js-frontend-496b24.css": "http://localhost:8080/build/vendors-frontend_node_modules_aos_dist_aos_css-frontend_node_modules_aos_dist_aos_js-frontend-496b24.css",
-  "build/vendors-frontend_node_modules_aos_dist_aos_css-frontend_node_modules_aos_dist_aos_js-frontend-496b24.js": "http://localhost:8080/build/vendors-frontend_node_modules_aos_dist_aos_css-frontend_node_modules_aos_dist_aos_js-frontend-496b24.js"
+  "build/assets_css_styles_css.css": "http://localhost:8080/build/assets_css_styles_css.css"
 }

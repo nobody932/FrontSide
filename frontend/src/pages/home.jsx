@@ -95,7 +95,7 @@ const Home = () => {
         </form>
       </div>
       <br />
-      <div className=" contain p-10 grid grid-cols-4 space-x-7 space-y-4  bg-red-500">
+      <div className="  p-10 grid grid-cols-4 space-x-7 space-y-4  bg-red-500">
         {posts.map((post) => {
           return (
             <div key={post.id} className="border text-center  ">
