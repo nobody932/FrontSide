@@ -1,21 +1,19 @@
 "use client"
 import React from "react";
 import { Link } from "react-router-dom";
-import Articles from "../../pages/articles";
-import Home from "../../pages/home";
-import Movies from "../../pages/movies";
-import News from "../../pages/news";
-import Teams from"../../pages/teams";
+
 
 const NavBar = () => (
   <nav className=" gradient-background  bg-red-800 py-3 flex justify-center ">
     <ul >
       <div>
-        <img src="/1.png"height={100}
+        <img src="/https://www.shutterstock.com/image-vector/funny-skateboard-skate-park-vintage-600w-1975970261.jpg"height={100}
                   width={300}  />
       </div>
-        <div className="grid grid-cols-4 space-x-5 text-center ">
-      <li>
+        <div className="grid grid-cols-5 space-x-5 text-center ">
+        <li>
+        <Link onClick={true} to="/">Acceuil</Link>
+      </li> <li>
         <Link onClick={true} to="/articles">Articles</Link>
       </li>
 

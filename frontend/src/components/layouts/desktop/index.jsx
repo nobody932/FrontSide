@@ -1,3 +1,6 @@
+"use client"
+import React from "react";
+import { Link } from "react-router-dom";
 const FooterDes = () => {
   return (
     <footer className="hidden bg-amber-700 text-blue-500 border border-black lg:flex flex-col">

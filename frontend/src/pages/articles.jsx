@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import NavBar from "../components/tools/navbar-des";
+import FooterDes from "../components/layouts/desktop";
+import AOS from "../components/tools/aos/aos";
 
 const Articles = () => {
   const [articles, setArticles] = useState([]);
@@ -23,11 +25,12 @@ const Articles = () => {
     <>
       <div>
         <NavBar />
+        <AOS/>
       </div>
-      <div className="grid grid-cols-3 mx-5 space-x-3 ">
+      <div className="grid grid-cols-3 mx-5 space-x-3  ">
         {articles.map((article) => {
           return (
-            <div key={article.id} className="bg-purple-500  border lg">
+            <div key={article.id} className="bg-purple-500 glass  border lg">
               <img src={article.image} alt="" />
               <h1 className="text-white italic font-bold">
                 Titre : {article.title}
@@ -40,6 +43,7 @@ const Articles = () => {
           );
         })}
       </div>
+      <FooterDes/>
     </>
   );
 };

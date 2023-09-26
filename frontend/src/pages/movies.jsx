@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import AOS from "../components/tools/aos/aos";
 import NavBar from "../components/tools/navbar-des";
+import FooterDes from "../components/layouts/desktop";
 
 const Movies =()=>{
     const [movies, setMovies] = useState([]);
@@ -28,7 +29,9 @@ const Movies =()=>{
               data-aos-easing="ease-in-back"
               data-aos-delay="300"
               data-aos-offset="0" key={movies.id} className="bg-purple-500  border lg">
-              <video src={movies.part} ></video> 
+            <video controls width="250">
+                <source src={movies.part} type="video/mp4" />
+              </video>
                 <h1 className="text-white italic font-bold">Titre : {movies.title}</h1>
                 <br />
                <p>description: {movies.description}</p> 
@@ -38,6 +41,6 @@ const Movies =()=>{
             );
           })}
         </div>
-      </>
+      <FooterDes/></>
     )};
  export default Movies

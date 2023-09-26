@@ -2,8 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
 
-.glass {
+
+  .containblue {
+    background: rgba(26, 152, 177, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  
+ .glass {
     background: rgba(28, 210, 245, 0.1);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(3px);
@@ -30,3 +39,12 @@
     }
   }
 
+.greencontain {
+  background: rgba( 128, 236, 15, 0.45 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+}

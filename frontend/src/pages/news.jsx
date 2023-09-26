@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import NavBar from "../components/tools/navbar-des";
+import FooterDes from "../components/layouts/desktop";
 
 const News = () => {
   const [news, SetNews] = useState([]);
@@ -41,7 +42,7 @@ const News = () => {
           );
         })}
       </div>
-    </>
+    <FooterDes/></>
   );
 };
 
