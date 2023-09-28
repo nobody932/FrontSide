@@ -7,6 +7,7 @@ use App\Entity\Movies;
 use App\Entity\News;
 use App\Entity\Teams;
 use App\Entity\Vidos;
+use App\Controller\SecurityController;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
