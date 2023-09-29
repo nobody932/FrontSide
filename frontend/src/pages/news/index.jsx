@@ -1,11 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
-import NavBar from "../components/tools/navbar-des";
-import FooterDes from "../components/layouts/desktop";
+import AOS from "../../components/tools/aos/aos";
+import NavBar from "../../components/tools/navbar-des";
+import FooterDes from "../../components/layouts/desktop";
+import ShowBr from "./produits/br";
+import ShowChs from "./produits/chs";
+import { NewsContext } from "../../components/context/newsProvider";
 
 const News = () => {
-  const [news, SetNews] = useState([]);
-  const [selectPro];
+  const [news, SetNews] = useState(NewsContext);
+
+  const [selectProduits, setSelectProduits] = useState({
+    br: false,
+    hw: false,
+    ch: false,
+    es: false,
+  });
+  const produits = ["Planche", "Hardwares", "Vêtements", "Chaussures"];
 
   useEffect(() => {
     axios
@@ -20,30 +31,56 @@ const News = () => {
       .finally(() => {
         console.log("lets gooo");
       });
+
+    AOS();
   }, []);
+
+  const SelectProduits = (produits) => {
+    if (produits === "Planche") {
+      // alert("ok c'est good FR");
+      setSelectProduits({
+        br: true,
+        chs: false,
+        hw: false,
+        vtm: false,
+      });
+    } else if (produits === "Chassaures") {
+      setSelectProduits({
+        br: false,
+        chs: true,
+        ch: false,
+        es: false,
+      });
+    }
+  };
+
   return (
     <>
-      <div>
-        <NavBar />
-      </div>
-      <div className="grid grid-cols-3 mx-5 space-x-3 space-y-5 ">
-        {news.map((news) => {
-          return (
-            <div key={news.id} className="bg-purple-500  border lg">
-              <img src={news.images} alt="" height={200} width={270} />
-              <h1 className="text-white italic font-bold">
-                Titre : {news.title}
-              </h1>
-              <br />
-              description: {news.description}
-              <br />
-              Prix: {news.prix}
-              <br />
-            </div>
-          );
-        })}
-      </div>
+      <NavBar />
+      <main className="min-h-screen">
+        <section className="grid grid-cols-4">
+          <div className="grid grid-cols-2 bg-slate-700 ">
+            {produits.map((produit) => {
+              return (
+                <div>
+                  <button className=" text-red-700 p-1 my-3 bg-amber-200"
+                  onClick={()=> {SelectProduits(produit);}}>
+                 {produit}
+                  </button>
+                </div>
+              );
+            })}
+
+          </div>
+          <div className="col-span-3">
+            {selectProduits.br ? <ShowBr /> : null}
+            {selectProduits.chs ? <ShowChs /> : null}
+          </div>
+        </section>
+      </main>
       <FooterDes />
     </>
   );
 };
+
+export default News;

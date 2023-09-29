@@ -3,11 +3,11 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "../../pages/home";
 import Articles from "../../pages/articles";
 import Movies from "../../pages/movies";
-import News from "../../pages/news";
+import News from "../../pages/news/index";
 import Teams from "../../pages/teams";
 import Dashboard from "../../pages/dashboard";
-
 import MovieProvider from "../../components/context/movieProvider";
+import NewsProvider from "../../components/context/newsProvider";
 
 export const Provider = createBrowserRouter([
   {
@@ -28,7 +28,11 @@ export const Provider = createBrowserRouter([
   },
   {
     path: "/news",
-    element: <News />,
+    element:(
+    <NewsProvider>
+      <News/>
+    </NewsProvider>
+    ), 
   },
   {
     path: "/teams",

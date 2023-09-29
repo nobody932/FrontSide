@@ -34,10 +34,12 @@ class AppFixtures extends Fixture
             $video->setCountry("France");
 
             $news= new News();
-            $news->setProduits('Titre du produit:'.$i);
+            $news->setTitle('Titre du produit:'.$i);
             $news->setPrix('Prix:'.$i);
             $news->setDescription('Lorem');
             $news->setImages('https://img.freepik.com/free-vector/extreme-skateboarding-colored-hand-drawn-background-with-young-man-helmet-knee-pads-skating-city-streets-skate-ramp_1284-60790.jpg?w=2000');
+            $news->setProduits("Planche");
+            $news->setLink('');
 
             $teams=new Teams;
             $teams->setName('Nom:'.$i);
