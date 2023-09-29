@@ -1,8 +1,6 @@
 import React from "react";
 
-const Profil =()=>{
-    return(
-  <h1>Hello Dash</h1>
-    );
+const Dashboard = () => {
+  return <h1>Hello Dashboard</h1>;
 };
-export default Profil;
+export default Dashboard;

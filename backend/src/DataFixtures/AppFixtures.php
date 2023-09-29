@@ -6,8 +6,6 @@ use App\Entity\Articles;
 use App\Entity\Movies;
 use App\Entity\News;
 use App\Entity\Teams;
-use App\Entity\Vidos;
-use App\Controller\SecurityController;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
@@ -15,7 +13,11 @@ class AppFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void
     {
+        
+
         for($i = 0; $i < 50; $i++) {
+
+
             $product = new Products();
             $product->setName('Produit Numéro:'.$i);
             $product->setDescription('Lorem'.$i);
@@ -25,10 +27,11 @@ class AppFixtures extends Fixture
             $article->setTitle("Titre de l'articles:".$i);
             $article->setDescription('Lorem');
             
-            $vidéo = new Movies();
-            $vidéo->setPart('https://media.istockphoto.com/id/970489194/fr/vid%C3%A9o/groupe-de-jeunes-gens-skateboard-sur-la-route-dans-larrondi-de-sugnal-de-morningwith-rouge.mp4?s=mp4-640x640-is&k=20&c=l8swlCDqD23h4a4W8PGFY3Z2ss-yqrHZee9ywMoau4o='.$i);
-            $vidéo->setTitles("Titre de la vidéo:".$i);
-            $vidéo->setDescription('Lorem'.$i);
+            $video = new Movies();
+            $video->setPart('https://media.istockphoto.com/id/970489194/fr/vid%C3%A9o/groupe-de-jeunes-gens-skateboard-sur-la-route-dans-larrondi-de-sugnal-de-morningwith-rouge.mp4?s=mp4-640x640-is&k=20&c=l8swlCDqD23h4a4W8PGFY3Z2ss-yqrHZee9ywMoau4o='.$i);
+            $video->setTitles("Titre de la vidéo:".$i);
+            $video->setDescription('Lorem'.$i);
+            $video->setCountry("France");
 
             $news= new News();
             $news->setProduits('Titre du produit:'.$i);
@@ -44,7 +47,7 @@ class AppFixtures extends Fixture
 
             $manager->persist($product);
             $manager->persist($article);
-            $manager->persist($vidéo);
+            $manager->persist($video);
             $manager->persist($news);
             $manager->persist($teams);
 }
