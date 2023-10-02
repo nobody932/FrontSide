@@ -6,9 +6,11 @@ import FooterDes from "../../components/layouts/desktop";
 import ShowFr from "./country/fr";
 import ShowEs from "./country/es";
 import { MovieContext } from "../../components/context/movieProvider";
+import ShowCh from "./country/ch";
+import ShowJp from "./country/jp";
 
 const Movies = () => {
-  const {movies, setMovies} = useContext(MovieContext);
+  const { movies, setMovies } = useContext(MovieContext);
 
   const [selectCountry, setSelectCountry] = useState({
     fr: false,
@@ -52,6 +54,20 @@ const Movies = () => {
         ch: false,
         es: true,
       });
+    }else if (country === "Chine") {
+      setSelectCountry({
+        fr: false,
+        jp: false,
+        ch: true,
+        es: false,
+      });
+    }else if (country === "Japon") {
+      setSelectCountry({
+        fr: false,
+        jp: true,
+        ch: false,
+        es: false,
+      });
     }
   };
 
@@ -79,6 +95,8 @@ const Movies = () => {
           <div className="col-span-3">
             {selectCountry.fr ? <ShowFr /> : null}
             {selectCountry.es ? <ShowEs /> : null}
+            {selectCountry.ch ? <ShowCh /> : null}
+            {selectCountry.jp ? <ShowJp /> : null}
           </div>
         </section>
       </main>

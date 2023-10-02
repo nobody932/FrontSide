@@ -3,14 +3,14 @@ import axios from "axios";
 import AOS from "../../components/tools/aos/aos";
 import NavBar from "../../components/tools/navbar-des";
 import FooterDes from "../../components/layouts/desktop";
-import ShowBr from "./produits/br";
+import ShowPl from "./produits/pl";
 import ShowChs from "./produits/chs";
 import { NewsContext } from "../../components/context/newsProvider";
 
 const News = () => {
-  const [news, setNews] = useState(NewsContext);
+  const { news, setNews } = useContext(NewsContext); //objet
 
-  const [selectProduits, setSelectProduits] = useState({
+  const [selectProduits, setSelectProduits] = useState({ //tableau
     pl: false,
     hw: false,
     chs: false,
@@ -22,7 +22,7 @@ const News = () => {
     axios
       .get("/api/news")
       .then((response) => {
-      //  console.log(response.data["hydra:member"]);
+        //  console.log(response.data["hydra:member"]);
         setNews(response.data["hydra:member"]);
       })
       .catch((error) => {
@@ -44,7 +44,8 @@ const News = () => {
         hw: false,
         vtm: false,
       });
-    } else if (produits === "Chassaures") {
+    } else if (produits === "Chaussaures") {
+      alert("ok c'est good FR");
       setSelectProduits({
         pl: false,
         chs: true,
@@ -76,7 +77,7 @@ const News = () => {
             })}
           </div>
           <div className="col-span-3">
-            {selectProduits.br ? <ShowBr /> : null}
+            {selectProduits.pl ? <ShowPl /> : null}
             {selectProduits.chs ? <ShowChs /> : null}
           </div>
         </section>

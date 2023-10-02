@@ -28,11 +28,11 @@ export const Provider = createBrowserRouter([
   },
   {
     path: "/news",
-    element:(
-    <NewsProvider>
-      <News/>
-    </NewsProvider>
-    ), 
+    element: (
+      <NewsProvider>
+        <News />
+      </NewsProvider>
+    ),
   },
   {
     path: "/teams",

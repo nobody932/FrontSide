@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import {NewsContext} from "../../../../components/context/newsProvider"
 
-const ShowBr = () => {
+const ShowPl = () => {
   const { news, setNews } = useContext(NewsContext);
 
   return (
@@ -24,5 +24,5 @@ const ShowBr = () => {
   );
 };
 
-export default ShowBr;
+export default ShowPl;
 
