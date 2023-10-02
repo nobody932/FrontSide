@@ -6,7 +6,7 @@ const ShowBr = () => {
 
   return (
     <div className="bg-cyan-400">
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-2">
         {news.map((news) => {
           // console.log(news.produits);
           if (news.produits === "Planche") {

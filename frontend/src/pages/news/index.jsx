@@ -8,13 +8,13 @@ import ShowChs from "./produits/chs";
 import { NewsContext } from "../../components/context/newsProvider";
 
 const News = () => {
-  const [news, SetNews] = useState(NewsContext);
+  const [news, setNews] = useState(NewsContext);
 
   const [selectProduits, setSelectProduits] = useState({
-    br: false,
+    pl: false,
     hw: false,
-    ch: false,
-    es: false,
+    chs: false,
+    vtm: false,
   });
   const produits = ["Planche", "Hardwares", "Vêtements", "Chaussures"];
 
@@ -22,8 +22,8 @@ const News = () => {
     axios
       .get("/api/news")
       .then((response) => {
-        console.log(response.data["hydra:member"]);
-        SetNews(response.data["hydra:member"]);
+      //  console.log(response.data["hydra:member"]);
+        setNews(response.data["hydra:member"]);
       })
       .catch((error) => {
         console.log(error);
@@ -39,17 +39,17 @@ const News = () => {
     if (produits === "Planche") {
       // alert("ok c'est good FR");
       setSelectProduits({
-        br: true,
+        pl: true,
         chs: false,
         hw: false,
         vtm: false,
       });
     } else if (produits === "Chassaures") {
       setSelectProduits({
-        br: false,
+        pl: false,
         chs: true,
-        ch: false,
-        es: false,
+        hw: false,
+        vtm: false,
       });
     }
   };
@@ -60,17 +60,20 @@ const News = () => {
       <main className="min-h-screen">
         <section className="grid grid-cols-4">
           <div className="grid grid-cols-2 bg-slate-700 ">
-            {produits.map((produit) => {
+            {produits.map((produits) => {
               return (
                 <div>
-                  <button className=" text-red-700 p-1 my-3 bg-amber-200"
-                  onClick={()=> {SelectProduits(produit);}}>
-                 {produit}
+                  <button
+                    className=" text-red-700 p-1 my-3 bg-amber-200"
+                    onClick={() => {
+                      SelectProduits(produits);
+                    }}
+                  >
+                    {produits}
                   </button>
                 </div>
               );
             })}
-
           </div>
           <div className="col-span-3">
             {selectProduits.br ? <ShowBr /> : null}

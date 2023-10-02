@@ -22,6 +22,13 @@ Jeudi: Faire des modification supplémentaire sur le `frontend` animation AOS
 
 Vendredi: Terminer le `backend`, vérifier la base de données `MySQL`.
 
+#### Logique métier 👨🏿‍💻
+
+1ère Semaine : Réaliser les catégories de "News et Teams"
+
+2ème Semaine : Ajouter une nouvelle page "Dashboard"
+
+3ème Semaines: mettre une alerte pour chaque utilisateurs qui se connect
 
 ## Les liens 📎 
 
