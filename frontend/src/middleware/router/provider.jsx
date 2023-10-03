@@ -8,7 +8,6 @@ import Teams from "../../pages/teams";
 import Dashboard from "../../pages/dashboard";
 import MovieProvider from "../../components/context/movieProvider";
 import NewsProvider from "../../components/context/newsProvider";
-
 export const Provider = createBrowserRouter([
   {
     path: "/",

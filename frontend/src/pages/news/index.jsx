@@ -6,6 +6,7 @@ import FooterDes from "../../components/layouts/desktop";
 import ShowPl from "./produits/pl";
 import ShowChs from "./produits/chs";
 import { NewsContext } from "../../components/context/newsProvider";
+import ShowHw from "./produits/hw";
 
 const News = () => {
   const { news, setNews } = useContext(NewsContext); //objet
@@ -79,6 +80,7 @@ const News = () => {
           <div className="col-span-3">
             {selectProduits.pl ? <ShowPl /> : null}
             {selectProduits.chs ? <ShowChs /> : null}
+            {selectProduits.hw ?<ShowHw /> : null }
           </div>
         </section>
       </main>

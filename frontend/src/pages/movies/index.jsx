@@ -11,7 +11,7 @@ import ShowJp from "./country/jp";
 
 const Movies = () => {
   const { movies, setMovies } = useContext(MovieContext);
-
+ 
   const [selectCountry, setSelectCountry] = useState({
     fr: false,
     jp: false,
@@ -47,25 +47,11 @@ const Movies = () => {
         ch: false,
         es: false,
       });
-    } else if (country === "Espagne") {
-      setSelectCountry({
-        fr: false,
-        jp: false,
-        ch: false,
-        es: true,
-      });
-    }else if (country === "Chine") {
+    } else if (country === "Chine") {
       setSelectCountry({
         fr: false,
         jp: false,
         ch: true,
-        es: false,
-      });
-    }else if (country === "Japon") {
-      setSelectCountry({
-        fr: false,
-        jp: true,
-        ch: false,
         es: false,
       });
     }
