@@ -22,11 +22,19 @@ security:
     api:
       pattern: ^/api
       stateless: true
+      entry_point: jwt
+      json_login:
+        check_path: /api/login # or, if you have defined a route for your login path, the route name you used
+        success_handler: lexik_jwt_authentication.handler.authentication_success
+        failure_handler: lexik_jwt_authentication.handler.authentication_failure
       jwt: ~
+      refresh_jwt:
+        check_path: /api/token/refresh
 
     dev:
       pattern: ^/(_(profiler|wdt)|css|images|js)/
       security: false
+
     main:
       lazy: true
       provider: app_user_provider
@@ -48,8 +56,8 @@ security:
     # - { path: ^/admin, roles: ROLE_ADMIN }
     # - { path: ^/profile, roles: ROLE_USER }
     # - { path: ^/api/login, roles: PUBLIC_ACCESS }
-    # - { path: ^/api, roles: IS_AUTHENTICATED_FULLY }
     - { path: ^/api, roles: ROLE_ADMIN, methods: ["POST", "PUT", "DELETE"] }
+    - { path: ^/api/(login|token/refresh), roles: PUBLIC_ACCESS }
 
 when@test:
   security:
