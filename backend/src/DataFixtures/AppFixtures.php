@@ -6,6 +6,7 @@ use App\Entity\Articles;
 use App\Entity\Movies;
 use App\Entity\News;
 use App\Entity\Teams;
+use App\Entity\Store;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
@@ -47,11 +48,17 @@ class AppFixtures extends Fixture
             $teams->setTitle('Titre de la part:'.$i);
             $teams->setPictures('https://media.istockphoto.com/id/1063555264/fr/vid%C3%A9o/bouchent-ralenti-de-skateur-faire-truc-flip-extr%C3%AAme.mp4?s=mp4-640x640-is&k=20&c=TR6rvHx1K1tQ9fyxt8062JDeOGpNcV2Nr_xThQEjZBo=');
 
+            $store=new Store;
+            $store->setStoreName('Nom:'.$i);
+            $store->setStorePicture('');
+            $store->setAdress('');
+
             $manager->persist($product);
             $manager->persist($article);
             $manager->persist($video);
             $manager->persist($news);
             $manager->persist($teams);
+            $manager->persist($store);
 }
 $manager->flush();
 
