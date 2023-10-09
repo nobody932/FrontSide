@@ -8,6 +8,7 @@ import Teams from "../../pages/teams";
 import Dashboard from "../../pages/dashboard";
 import MovieProvider from "../../components/context/movieProvider";
 import NewsProvider from "../../components/context/newsProvider";
+import Login from "../../pages/login";
 export const Provider = createBrowserRouter([
   {
     path: "/",
@@ -40,5 +41,9 @@ export const Provider = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);

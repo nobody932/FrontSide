@@ -10,7 +10,7 @@ const NavBar = () => (
         <img src="/https://www.shutterstock.com/image-vector/funny-skateboard-skate-park-vintage-600w-1975970261.jpg"height={100}
                   width={300}  />
       </div>
-        <div className="grid grid-cols-5 space-x-5 text-center ">
+        <div className="grid grid-cols-6 space-x-5 text-center ">
         <li>
         <Link onClick={true} to="/">Acceuil</Link>
       </li> <li>
@@ -28,6 +28,11 @@ const NavBar = () => (
       <li>
         <Link onClick={true} to="/teams">Teams</Link>
       </li>
+
+      <li>
+        <Link onClick={true} to="/dashboard">Dashboard</Link>
+      </li>
+
 
       </div>
     </ul>
