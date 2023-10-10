@@ -45,7 +45,7 @@ const News = () => {
         hw: false,
         vtm: false,
       });
-    } else if (produits === "Chaussaures") {
+    } else if (produits === "Chaussures") {
       alert("ok c'est good FR");
       setSelectProduits({
         pl: false,

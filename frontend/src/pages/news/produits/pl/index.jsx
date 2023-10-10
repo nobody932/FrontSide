@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import {NewsContext} from "../../../../components/context/newsProvider"
+import { NewsContext } from "../../../../components/context/newsProvider";
 
 const ShowPl = () => {
   const { news, setNews } = useContext(NewsContext);
@@ -14,7 +14,7 @@ const ShowPl = () => {
             return (
               <div key={news.id}>
                 {news.titles}
-               <img src={news.images} alt="" />
+                <img src={news.images} alt="" />
               </div>
             );
           }
@@ -25,4 +25,3 @@ const ShowPl = () => {
 };
 
 export default ShowPl;
-

@@ -1,93 +1,120 @@
 import React from "react";
 import axios from "axios";
+import NavBar from "../components/tools/navbar-des";
 
 const Dashboard = () => {
   return (
+    <>
+      <section>
+        <NavBar />
+        <div className="bg-red-800 flex flex-col text-center py-10">
+          <h1>Hello Dashboard</h1>
+        </div>
+        <div className="py-10 bg-amber-400"></div>
+        <form
+          className=" bg-slate-500 grid grid-cols-3 justify-center text-center space-y-5 py-10"
+          action=""
+        >
+          <li className="">
+            {" "}
+            ajouter un article{" "}
+            <div className="grid justify-center items-center space-y-2">
+              <label htmlFor="">
+                Titre de l'article: <input type="text" name="myTitles" />
+              </label>
+              <label htmlFor="">
+                Image: <input type="text" name="myImage" />
+              </label>
+              <label htmlFor="">
+                Description: <input type="text" name="myDescription" />
+              </label>{" "}
+              <button
+                className="border rounded-xl flex justify-center w-20"
+                type="button"
+              >
+                envoyer
+              </button>
+            </div>
+          </li>
+          <li>
+            {" "}
+            ajouter une nouvelle team
+            <div className="grid justify-center space-y-2">
+              <label htmlFor="">
+                Nom de l'équipe : <input type="text" name="MyName" />
+              </label>
+              <label htmlFor="">
+                Images : <input type="text" />
+              </label>
+              <label htmlFor="">
+                Titre de la vidéo :<input type="text" />
+              </label>{" "}
+              <button onClick={""} className="border rounded-xl" type="button">
+                envoyer
+              </button>
+            </div>
+          </li>
+          <li>
+            {" "}
+            ajouter une nouveauté{" "}
+            <div className="grid justify-center space-y-2">
+              <label htmlFor="">
+                Titre: <input type="text" name="MyTitle" />
+              </label>
+              <label htmlFor="">
+                Images: <input type="text" name="MyImages" />
+              </label>
+              <label htmlFor="">
+                Liens: <input type="text" name="MyLink" />
+              </label>{" "}
+              <button className="border rounded-xl" type="button">
+                envoyer
+              </button>
+            </div>
+          </li>
 
-
-
-    
-     <section><div className="bg-orange-600 flex flex-col text-center py-10">
-      <h1>Hello Dashboard</h1>
-     </div>
-     <div className="py-10 bg-amber-400">
-      
-     </div>
-      <form className=" bg-slate-500 grid grid-cols-3 justify-center text-center space-y-3 py-10" action="">
-        <li className="">
-          {" "}
-          ajouter un article{" "}
-          <div className="grid justify-center space-y-2">
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-          </div>
-          <button className="border rounded-xl flex-col justify-center" type="button">
-            envoyer
-          </button>
-        </li>
-        <li>
-          {" "}
-          ajouter un nouveau produit
-          <div className="grid justify-center space-y-2">
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-          </div>
-          <button onClick={""} className="border rounded-xl" type="button">
-            envoyer
-          </button>
-        </li>
-        <li>
-          {" "}
-          ajouter un article{" "}
-          <div className="grid justify-center space-y-2">
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-          </div>
-          <button className="border rounded-xl" type="button">
-            envoyer
-          </button>
-        </li>
-        <li>
-          {" "}
-          ajouter un article{" "}
-          <div className="grid justify-center space-y-2">
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-          </div>
-          <button className="border rounded-xl" type="button">
-            envoyer
-          </button>
-        </li>
-        <li>
-          {" "}
-          ajouter un article{" "}
-          <div className="grid justify-center space-y-2">
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-          </div>
-          <button className="border rounded-xl" type="button">
-            envoyer
-          </button>
-        </li>
-        <li>
-          {" "}
-          ajouter une vidéo{" "}
-          <div className="grid justify-center space-y-2">
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />{" "}
-          </div>
-          <button className="border rounded-xl" type="button">
-            envoyer
-          </button>
-        </li>
-      </form>
-   </section> 
+          <li>
+            {" "}
+            ajouter un nouveau magasin{" "}
+            <div className="grid justify-center space-y-2">
+              <label htmlFor="">
+                Nom de l'enseigne: <input type="text" name="myStoreName" />
+              </label>
+              <label htmlFor="">
+                Images: <input type="text" name="MyStorePicture" />
+              </label>
+              <label htmlFor="">
+                ajouter une adresse: <input type="text" name="MyAdress" />
+              </label>{" "}
+              <button className="border rounded-xl" type="button">
+                envoyer
+              </button>
+            </div>
+          </li>
+          <li>
+            {" "}
+            ajouter une vidéo{" "}
+            <div className="grid justify-center space-y-2">
+              <label htmlFor="">
+                Titre de la vidéo: <input type="text" name="MyTitle" />
+              </label>
+              <label htmlFor="">
+                Vidéo: <input type="text" name="MyPart" />
+              </label>
+              <label htmlFor="">
+                Description: <input type="text" name="MyDescription" />
+              </label>{" "}
+              <button
+                className="  justify-center border rounded "
+                type="button"
+              >
+                envoyer
+              </button>
+            </div>
+          </li>
+        </form>
+      </section>
+    </>
   );
 };
 export default Dashboard;

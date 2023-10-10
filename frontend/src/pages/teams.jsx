@@ -22,9 +22,8 @@ const Teams = () => {
   }, []);
   return (
     <>
-      <div>
         <NavBar />
-      </div>
+      <section className="bg-">
       <div className="grid grid-cols-5 mx-5 space-x-3 space-y-5 glass">
         {teams.map((teams) => {
           return (
@@ -44,7 +43,7 @@ const Teams = () => {
             </div>
           );
         })}
-      </div>
+      </div></section>
       <FooterDes />
     </>
   );

@@ -3,7 +3,7 @@ import { NewsContext } from "../../../../components/context/newsProvider";
 const ShowChs = () => {
   
   const { news, setNews } = useContext(NewsContext);
-
+  console.log(news)
   return (
     <div className="bg-cyan-400">
       <div className="grid grid-cols-3 py-5">
