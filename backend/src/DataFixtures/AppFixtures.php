@@ -50,8 +50,8 @@ class AppFixtures extends Fixture
 
             $store=new Store;
             $store->setStoreName('Nom:'.$i);
-            $store->setStorePicture('');
-            $store->setAdress('');
+            $store->setStorePicture('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeWg4QuUiNM0FdhCt2qDMDUxmQ-XEN0UzD9A&usqp=CAU');
+            $store->setAdress('26 rue de la rampe');
 
             $manager->persist($product);
             $manager->persist($article);

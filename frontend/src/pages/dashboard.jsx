@@ -28,12 +28,14 @@ const Dashboard = () => {
               <label htmlFor="">
                 Description: <input type="text" name="myDescription" />
               </label>{" "}
-              <button
-                className="border rounded-xl flex justify-center w-20"
-                type="button"
-              >
-                envoyer
-              </button>
+              <div className="flex flex-col items-center">
+                <button
+                  className="border rounded-xl flex justify-center w-20"
+                  type="button"
+                >
+                  envoyer
+                </button>
+              </div>
             </div>
           </li>
           <li>
@@ -49,9 +51,14 @@ const Dashboard = () => {
               <label htmlFor="">
                 Titre de la vidéo :<input type="text" />
               </label>{" "}
-              <button onClick={""} className="border rounded-xl" type="button">
-                envoyer
-              </button>
+              <div className="flex flex-col items-center">
+                <button
+                  className="border rounded-xl flex justify-center w-20"
+                  type="button"
+                >
+                  envoyer
+                </button>
+              </div>
             </div>
           </li>
           <li>
@@ -67,9 +74,14 @@ const Dashboard = () => {
               <label htmlFor="">
                 Liens: <input type="text" name="MyLink" />
               </label>{" "}
-              <button className="border rounded-xl" type="button">
-                envoyer
-              </button>
+              <div className="flex flex-col items-center">
+                <button
+                  className="border rounded-xl flex justify-center w-20"
+                  type="button"
+                >
+                  envoyer
+                </button>
+              </div>
             </div>
           </li>
 
@@ -86,9 +98,14 @@ const Dashboard = () => {
               <label htmlFor="">
                 ajouter une adresse: <input type="text" name="MyAdress" />
               </label>{" "}
-              <button className="border rounded-xl" type="button">
-                envoyer
-              </button>
+              <div className="flex flex-col items-center">
+                <button
+                  className="border rounded-xl flex justify-center w-20"
+                  type="button"
+                >
+                  envoyer
+                </button>
+              </div>
             </div>
           </li>
           <li>
@@ -104,12 +121,14 @@ const Dashboard = () => {
               <label htmlFor="">
                 Description: <input type="text" name="MyDescription" />
               </label>{" "}
-              <button
-                className="  justify-center border rounded "
-                type="button"
-              >
-                envoyer
-              </button>
+              <div className="flex flex-col items-center">
+                <button
+                  className="border rounded-xl flex justify-center w-20"
+                  type="button"
+                >
+                  envoyer
+                </button>
+              </div>
             </div>
           </li>
         </form>
