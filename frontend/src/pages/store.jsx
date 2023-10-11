@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import NavBar from "../components/tools/navbar-des";
-import AOS from "../components/tools/aos/aos";
 import FooterDes from "../components/layouts/desktop";
 const Store = () => {
   const [store, setStore] = useState([]);
@@ -16,23 +15,23 @@ const Store = () => {
         console.log(error);
       })
       .finally(() => {
-        console.log("bien jouer bg ");
+        console.log("bien jouer bg");
       });
   }, []);
   return (
     <>
     <NavBar />
   
-      <div className="grid grid-cols-3 mx-5 space-x-3  ">
-        {store.map((stores) => {
+      <div className="grid grid-cols-2 mx-5 space-x-3  ">
+        {store.map((store) => {
           return (
-            <div key={stores.id} className="bg-purple-500 glass  border lg">
-              <img src={stores.storepicture} alt="" />
+            <div key={store.id} className="bg-purple-500 glass  border lg">
+              <img src={store.storePicture} alt="" />
               <h1 className="text-white italic font-bold">
-                Titre : {stores.storename}
+                Titre : {store.storeName}
               </h1>
               <br />
-              Adresse: {stores.adress}
+              Adresse: {store.adress}
               <br />
               <br />
             </div>
