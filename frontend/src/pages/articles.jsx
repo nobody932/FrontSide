@@ -23,11 +23,10 @@ const Articles = () => {
 
   return (
     <>
-      <div>
-        <NavBar />
-        <AOS/>
-      </div>
-      <div  className="grid grid-cols-3 mx-5 space-x-3  ">
+      <NavBar />
+     
+
+      <div className="grid grid-cols-3 mx-5 space-x-3  ">
         {articles.map((article) => {
           return (
             <div key={article.id} className="bg-purple-500 glass  border lg">
@@ -43,7 +42,7 @@ const Articles = () => {
           );
         })}
       </div>
-      <FooterDes/>
+      <FooterDes />
     </>
   );
 };

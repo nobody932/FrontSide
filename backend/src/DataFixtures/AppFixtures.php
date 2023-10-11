@@ -49,8 +49,8 @@ class AppFixtures extends Fixture
             $teams->setPictures('https://media.istockphoto.com/id/1063555264/fr/vid%C3%A9o/bouchent-ralenti-de-skateur-faire-truc-flip-extr%C3%AAme.mp4?s=mp4-640x640-is&k=20&c=TR6rvHx1K1tQ9fyxt8062JDeOGpNcV2Nr_xThQEjZBo=');
 
             $store=new Store;
-            $store->setStoreName('Nom:'.$i);
-            $store->setStorePicture('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeWg4QuUiNM0FdhCt2qDMDUxmQ-XEN0UzD9A&usqp=CAU');
+            $store->setStorename('Nom:'.$i);
+            $store->setStorepicture('https://media.istockphoto.com/id/472077397/fr/photo/venise-skate-trucs-magasin-californie-%C3%A9tats-unis.jpg?s=2048x2048&w=is&k=20&c=f6AB6EzCVx4jPlmyv6LiqqelEPg8CjH0mCRgjEq-nNk=');
             $store->setAdress('26 rue de la rampe');
 
             $manager->persist($product);

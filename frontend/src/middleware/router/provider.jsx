@@ -9,6 +9,7 @@ import Dashboard from "../../pages/dashboard";
 import MovieProvider from "../../components/context/movieProvider";
 import NewsProvider from "../../components/context/newsProvider";
 import Login from "../../pages/login";
+import Store from "../../pages/store";
 export const Provider = createBrowserRouter([
   {
     path: "/",
@@ -42,10 +43,10 @@ export const Provider = createBrowserRouter([
     path: "/dashboard",
     element: <Dashboard />,
   },
-  // {
-  //   path: "/store",
-  //   element: <Store/>,
-  // },
+  {
+    path: "/stores",
+    element: <Store />,
+  },
   {
     path: "/login",
     element: <Login />,
