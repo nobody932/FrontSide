@@ -6,14 +6,22 @@ import Movies from "../../pages/movies";
 import News from "../../pages/news/index";
 import Teams from "../../pages/teams";
 import Dashboard from "../../pages/dashboard";
-import MovieProvider from "../../components/context/movieProvider";
-import NewsProvider from "../../components/context/newsProvider";
 import Login from "../../pages/login";
 import Store from "../../pages/store";
 
 
 const Global=()=>{
-
+return(
+    <>
+    <Login/>
+    <Articles/>
+    <Dashboard/>
+    <News/>
+    <Movies/>
+    <Teams/>
+    <Store/>
+    </>
+)
 }
 
 export default Global

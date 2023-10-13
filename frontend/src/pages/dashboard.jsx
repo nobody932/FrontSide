@@ -1,8 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
+import process, { title } from "process";
 import NavBar from "../components/tools/navbar-des";
 
 const Dashboard = () => {
+  const [posts, setPosts] = useState([]);
+  const [createPost, setCreatePost] = useState([]);
+
+  const OnChangeTitle = (event) => {
+    setCreatePost({
+      ...createPost,
+      title: event.target.value,
+    });
+    console.log(createPost);
+  };
+
+  const OnChangeDesc = (event) => {
+    setCreatePost({
+      ...createPost,
+      description: event.target.value,
+    });
+    console.log(createPost);
+  };
+  const SubmitForm = () => {
+    const data = {
+      title: createPost.title,
+    };
+  };
+
   return (
     <>
       <section>
