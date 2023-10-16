@@ -69,38 +69,46 @@ const Home = () => {
     });
   };
 
+
+  
+  const ShowmePicture = () => {
+    const Image = {};
+  };
+
   return (
     <>
       <NavBar />
-      
-      <section className="bg-green-500">
-        <div>
-          <form action="">
-            <div>
-              <label htmlFor="">Nom</label>
-              <input className="border" type="text" onChange={OnChangeName} />
-            </div>
-            <div>
-              <label htmlFor="">Description</label>
-              <input className="border" type="text" onChange={OnChangeDesc} />
-            </div>
-            <div>
-              <label htmlFor="">Prix</label>
-              <input className="border" type="text" onChange={OnChangePrice} />
-            </div>
-            <div>
-              <button
-                className="flex justify-center"
-                type="button"
-                onClick={() => SubmitForm()}
-              >
-                Envoyer
-              </button>
-            </div>
-          </form>
-        </div>
-        <div data-aos="fade-right" className="containblue"><AOS />
-          <div className=" p-10 grid grid-cols-4 space-x-7 space-y-4 ">
+      <section>
+        <h1 className="text-center font-extrabold py-8">
+          Bienvenue sur Frontside{" "}
+        </h1>
+        <div data-aos="fade-right" className="containblue">
+          <div className="text-center flex flex-col font-serif">
+            <div>Récents ajouts:</div>
+            <ul>
+              <div className=" grid grid-cols-6 font-light py-12">
+                <button type="button" onClick={alert}>
+                  {" "}
+                  <li>Articles</li>
+                </button>
+                <button type="button" onClick={alert}>
+                  {" "}
+                  <li>News</li>
+                </button>
+                <button type="button" onClick={alert}>
+                  <li>Part</li>
+                </button>
+                <button type="button" onClick={alert}>
+                  <li>Equipes</li>
+                </button>
+                <button type="button" onClick={alert}>
+                  <li>Magasin</li>
+                </button>
+              </div>
+            </ul>
+          </div>
+
+          <div className="my-48 p-10 grid grid-cols-2 space-x-7 space-y-4 ">
             {posts.map((post) => {
               return (
                 <div key={post.id} className="border text-center  ">
