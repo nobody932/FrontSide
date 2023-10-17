@@ -78,7 +78,7 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <section>
+      <section className="bg-slate-800">
         <h1 className="text-center font-extrabold py-8">
           Bienvenue sur Frontside{" "}
         </h1>
