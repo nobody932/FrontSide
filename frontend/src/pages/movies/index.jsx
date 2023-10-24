@@ -8,6 +8,7 @@ import ShowEs from "./country/es";
 import { MovieContext } from "../../components/context/movieProvider";
 import ShowCh from "./country/ch";
 import ShowJp from "./country/jp";
+import DarkHeaderD from "../../components/tools/headermob/header";
 
 const Movies = () => {
   const { movies, setMovies } = useContext(MovieContext);
@@ -59,7 +60,7 @@ const Movies = () => {
 
   return (
     <>
-      <NavBar />
+     <DarkHeaderD />
       <main className="min-h-screen">
         <section className="grid grid-cols-4">
           <div className="grid grid-cols-2 bg-cyan-100">

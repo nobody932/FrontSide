@@ -7,6 +7,7 @@ import AOS from "../components/tools/aos/aos";
 import { Header } from "semantic-ui-react";
 import DarkHeaderD from "../components/tools/headermob/header";
 import App from "../components/tools/cards/homecard";
+import DarkContentA from "../components/tools/content/darkcontent";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -72,46 +73,48 @@ const Home = () => {
     });
   };
 
-  const ShowmePicture = () => {
-    const Image = {};
+  const ShowmeNews = () => {
+    const [selectShowme, setSelectShowme] = useState({
+      fr: false,
+      jp: false,
+      ch: false,
+      es: false,
+    });
   };
- 
   return (
     <>
       <DarkHeaderD />
-      <section className="bg-amber-800">
+      <section className="bg-amber-800 text-white">
+        <DarkContentA />
         <h1 className="text-center font-extrabold py-8">
-          Bienvenue sur Frontside{" "}
+          <div>Récents ajouts:</div>
         </h1>
 
-        <div data-aos="fade-right" className="containblue">
-          <div className="text-center flex flex-col font-serif">
-            <div>Récents ajouts:</div>
-            <ul>
-              <div className=" grid grid-cols-6 font-light py-12">
-                <button type="button" onClick={alert}>
-                  {" "}
-                  <li>Articles</li>
-                </button>
-                <button type="button" >
-                  {" "}
-                  <li>News</li>
-                </button>
-                <button type="button" onClick={alert}>
-                  <li>Part</li>
-                </button>
-                <button type="button" onClick={alert}>
-                  <li>Equipes</li>
-                </button>
-                <button type="button" onClick={alert}>
-                  <li>Magasin</li>
-                </button>
-              </div>
-            </ul>
-          </div>
-
-          <App />
+        <div className="text-center flex flex-col font-serif">
+          <ul>
+            <div className=" grid grid-cols-6 font-light py-12">
+              <button type="button" onClick={alert}>
+                {" "}
+                <li>Articles</li>
+              </button>
+              <button type="button">
+                {" "}
+                <li>News</li>
+              </button>
+              <button type="button" onClick={alert}>
+                <li>Part</li>
+              </button>
+              <button type="button" onClick={alert}>
+                <li>Equipes</li>
+              </button>
+              <button type="button" onClick={alert}>
+                <li>Magasin</li>
+              </button>
+            </div>
+          </ul>
         </div>
+
+        <App />
       </section>{" "}
       <FooterDes />{" "}
     </>

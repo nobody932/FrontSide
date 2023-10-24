@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import NavBar from "../components/tools/navbar-des";
 import FooterDes from "../components/layouts/desktop";
+import DarkHeaderD from "../components/tools/headermob/header";
 const Store = () => {
   const [store, setStore] = useState([]);
   useEffect(() => {
@@ -20,12 +20,12 @@ const Store = () => {
   }, []);
   return (
     <>
-    <NavBar />
+    <DarkHeaderD />
   
-      <div className="grid grid-cols-2 mx-5 space-x-3  ">
+      <div className="grid grid-cols-2 mx-2  space-x-3  ">
         {store.map((store) => {
           return (
-            <div key={store.id} className="bg-purple-500 glass  border lg">
+            <div key={store.id} className="bg-purple-500  w-50 border lg">
               <img src={store.storePicture} alt="" />
               <h1 className="text-white italic font-bold">
                 Titre : {store.storeName}

@@ -8,11 +8,13 @@ import Teams from "../../pages/teams";
 import Dashboard from "../../pages/dashboard";
 import Login from "../../pages/login";
 import Store from "../../pages/store";
-
+import DarkHeaderD from "../components/tools/headermob/header";
+import DarkFooterA from "../components/layouts/desktop";
 
 const Global=()=>{
 return(
     <>
+    <DarkHeaderD />
     <Login/>
     <Articles/>
     <Dashboard/>
@@ -20,6 +22,7 @@ return(
     <Movies/>
     <Teams/>
     <Store/>
+    <DarkFooterA/>
     </>
 )
 }
