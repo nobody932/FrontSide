@@ -61,4 +61,27 @@ const OnChangeName = (event) => {
       </div>
     </form>
   </div>
+  <div className="my-48 p-10 grid grid-cols-2 bg-slate-500 space-x-7 space-y-4 ">
+            {posts.map((post) => {
+              return (
+                <div key={post.id} className="border text-center  ">
+                  Nom: {post.name}
+                  <br />
+                  Description: {post.description}
+                  <div>
+                    <button
+                      type="button"
+                      className="bg-green-700 p-2"
+                      onClick={() => DeletePost(post.id)}
+                    >
+                      Supprimer
+                    </button>
+                  </div>
+                  <br />
+                  <br />
+                </div>
+              );
+            })}
+            ;
+          </div>
   </section>

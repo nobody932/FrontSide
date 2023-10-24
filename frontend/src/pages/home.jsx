@@ -4,6 +4,9 @@ import process from "process";
 import NavBar from "../components/tools/navbar-des";
 import FooterDes from "../components/layouts/desktop";
 import AOS from "../components/tools/aos/aos";
+import { Header } from "semantic-ui-react";
+import DarkHeaderD from "../components/tools/headermob/header";
+import App from "../components/tools/cards/homecard";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -69,19 +72,18 @@ const Home = () => {
     });
   };
 
-
-  
   const ShowmePicture = () => {
     const Image = {};
   };
-
+ 
   return (
     <>
-      <NavBar />
-      <section className="bg-slate-800">
+      <DarkHeaderD />
+      <section className="bg-amber-800">
         <h1 className="text-center font-extrabold py-8">
           Bienvenue sur Frontside{" "}
         </h1>
+
         <div data-aos="fade-right" className="containblue">
           <div className="text-center flex flex-col font-serif">
             <div>Récents ajouts:</div>
@@ -91,7 +93,7 @@ const Home = () => {
                   {" "}
                   <li>Articles</li>
                 </button>
-                <button type="button" onClick={alert}>
+                <button type="button" >
                   {" "}
                   <li>News</li>
                 </button>
@@ -108,29 +110,7 @@ const Home = () => {
             </ul>
           </div>
 
-          <div className="my-48 p-10 grid grid-cols-2 space-x-7 space-y-4 ">
-            {posts.map((post) => {
-              return (
-                <div key={post.id} className="border text-center  ">
-                  Nom: {post.name}
-                  <br />
-                  Description: {post.description}
-                  <div>
-                    <button
-                      type="button"
-                      className="bg-green-700 p-2"
-                      onClick={() => DeletePost(post.id)}
-                    >
-                      Supprimer
-                    </button>
-                  </div>
-                  <br />
-                  <br />
-                </div>
-              );
-            })}
-            ;
-          </div>
+          <App />
         </div>
       </section>{" "}
       <FooterDes />{" "}
