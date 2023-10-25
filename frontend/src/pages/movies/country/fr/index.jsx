@@ -5,7 +5,10 @@ const ShowFr = () => {
   const { movies, setMovies } = useContext(MovieContext);
 
   return (
-    <div className="bg-cyan-400">
+    <div style={{
+      backgroundImage:
+        ' url("https://images.pexels.com/photos/3095769/pexels-photo-3095769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)',
+    }} className="bg-cyan-400">
       <div className="grid grid-cols-3">
         {movies.map((movie) => {
           // console.log(movie.country);

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import NavBar from "../components/tools/navbar-des";
-import FooterDes from "../components/layouts/desktop";
-import DarkHeaderD from "../components/tools/headermob/header";
-import DarkFooterA from "../components/layouts/desktop";
+import NavBar from "../../components/tools/navbar-des";
+import FooterDes from "../../components/layouts/desktop";
+import DarkHeaderD from "../../components/tools/headermob/header";
+import DarkFooterA from "../../components/layouts/desktop";
 const Teams = () => {
   const [teams, SetTeams] = useState([]);
   useEffect(() => {
