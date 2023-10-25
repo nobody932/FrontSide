@@ -10,6 +10,7 @@ import MovieProvider from "../../components/context/movieProvider";
 import NewsProvider from "../../components/context/newsProvider";
 import Login from "../../pages/login";
 import Store from "../../pages/store";
+import RegisterUser from "../../pages/register";
 export const Provider = createBrowserRouter([
   {
     path: "/",
@@ -50,5 +51,9 @@ export const Provider = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/register",
+    element: <RegisterUser/>,
   },
 ]);

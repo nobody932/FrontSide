@@ -1,70 +1,58 @@
-"use client"
+
 import React from "react";
 import PropTypes from  "prop-types";
 
+
 function LightCTAB(props) {
   return (
-    <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto flex flex-wrap items-center">
-        <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-          <h1 className="title-font font-medium text-3xl text-gray-900">
-            Slow-carb next level shoindcgoitch ethical authentic, poko scenester
-          </h1>
-          <p className="leading-relaxed mt-4">
-            Poke slow-carb mixtape knausgaard, typewriter street art gentrify
-            hammock starladder roathse. Craies vegan tousled etsy austin.
-          </p>
+    <section>
+
+   
+    <div class="w-full max-w-sm p-6 m-auto mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
+    
+
+    <form class="mt-6">
+        <div>
+            <label for="username" class="block text-sm text-gray-800 dark:text-gray-200">Username</label>
+            <input type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" />
         </div>
-        <div className="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-          <h2 className="text-gray-900 text-lg font-medium title-font mb-5">
-            Sign Up
-          </h2>
-          <div className="relative mb-4">
-            <label
-              htmlFor="full-name"
-              className="leading-7 text-sm text-gray-600"
-            >
-              Full Name
-            </label>
-            <input
-              type="text"
-              id="full-name"
-              name="full-name"
-              className={`w-full bg-white rounded border border-gray-300 focus:border-${props.theme}-500 focus:ring-2 focus:ring-${props.theme}-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out`}
-            />
-          </div>
-          <div className="relative mb-4">
-            <label
-              htmlFor="email"
-              className="leading-7 text-sm text-gray-600"
-            >
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className={`w-full bg-white rounded border border-gray-300 focus:border-${props.theme}-500 focus:ring-2 focus:ring-${props.theme}-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out`}
-            />
-          </div>
-          <button className={`text-white bg-${props.theme}-500 border-0 py-2 px-8 focus:outline-none hover:bg-${props.theme}-600 rounded text-lg`}>
-            Button
-          </button>
-          <p className="text-xs text-gray-500 mt-3">
-            Literally you probably haven&apos;t heard of them jean shorts.
-          </p>
+
+        <div class="mt-4">
+            <div class="flex items-center justify-between">
+                <label for="password" class="block text-sm text-gray-800 dark:text-gray-200">Password</label>
+                <a href="#" class="text-xs text-gray-600 dark:text-gray-400 hover:underline">Forget Password?</a>
+            </div>
+
+            <input type="password" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" />
         </div>
-      </div>
-    </section>
+
+        <div class="mt-6">
+            <button class="w-full px-6 py-2.5 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">
+                <a href="">Sign In</a>
+            </button>
+        </div>
+    </form>
+
+    <div class="flex items-center justify-between mt-4">
+        <span class="w-1/5 border-b dark:border-gray-600 lg:w-1/5"></span>
+
+        <a href="#" class="text-xs text-center text-gray-500 uppercase dark:text-gray-400 hover:underline">
+            or login with Social Media
+        </a>
+
+
+   
+
+        <a href="#" class="p-2 mx-2 text-sm font-medium text-gray-500 transition-colors duration-300 transform bg-gray-300 rounded-lg hover:bg-gray-200">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z">
+                </path>
+            </svg>
+        </a>
+    </div>
+
+    <p class="mt-8 text-xs font-light text-center text-gray-400"> Don't have an account? <a href="#" class="font-medium text-gray-700 dark:text-gray-200 hover:underline">Create One</a></p>
+</div> </section>
   );
 }
-
-LightCTAB.defaultProps = {
-  theme: 'indigo'
-};
-
-LightCTAB.propTypes = {
-  theme: PropTypes.string.isRequired
-};
-
 export default LightCTAB;

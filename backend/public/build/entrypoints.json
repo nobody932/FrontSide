@@ -4,11 +4,11 @@
       "js": [
         "http://localhost:8080/build/runtime.js",
         "http://localhost:8080/build/vendors-node_modules_mini-css-extract-plugin_dist_hmr_hotModuleReplacement_js-node_modules_we-857c62.js",
-        "http://localhost:8080/build/vendors-frontend_node_modules_aos_dist_aos_css-frontend_node_modules_aos_dist_aos_js-frontend-1002b5.js",
+        "http://localhost:8080/build/vendors-frontend_node_modules_aos_dist_aos_css-frontend_node_modules_aos_dist_aos_js-frontend-7b13b0.js",
         "http://localhost:8080/build/app.js"
       ],
       "css": [
-        "http://localhost:8080/build/vendors-frontend_node_modules_aos_dist_aos_css-frontend_node_modules_aos_dist_aos_js-frontend-1002b5.css"
+        "http://localhost:8080/build/vendors-frontend_node_modules_aos_dist_aos_css-frontend_node_modules_aos_dist_aos_js-frontend-7b13b0.css"
       ]
     },
     "tailwind": {

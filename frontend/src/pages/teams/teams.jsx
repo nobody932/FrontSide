@@ -4,6 +4,7 @@ import NavBar from "../../components/tools/navbar-des";
 import FooterDes from "../../components/layouts/desktop";
 import DarkHeaderD from "../../components/tools/headermob/header";
 import DarkFooterA from "../../components/layouts/desktop";
+import DarkTeamA from "../../components/tools/cards/teamscard";
 const Teams = () => {
   const [teams, SetTeams] = useState([]);
   useEffect(() => {
@@ -27,6 +28,7 @@ const Teams = () => {
           backgroundImage: 'url("https://images.unsplash.com/photo-1543386800-8662ead342ce?auto=format&fit=crop&q=80&w=1935&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
          
         }} >
+          <DarkTeamA/>
       <div className="grid grid-cols-5 mx-5   space-x-3 space-y-5 glass">
         {teams.map((teams) => {
           return (
