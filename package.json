@@ -8,12 +8,15 @@
   "license": "ISC",
   "private": true,
   "scripts": {
-    "start": "run-p start:**",
-    "start:react": "encore dev-server",
-    "start:symfony": "symfony serve",
-    "dev": "encore dev",
-    "watch": "encore dev --watch",
-    "build": "encore production --progress"
+    "dev": "run-p dev:**",
+    "dev:symfony": "symfony serve",
+    "dev:react": "encore dev-server",
+    "prod": "sudo composer install && pnpm run prod:node",
+    "prod:node": "pnpm install && pnpm run prod:autoloader ",
+    "prod:autoloader": "sudo composer install --no-dev --optimize-autoloader",
+    "prod:build": "encore production --progress",
+    "packages": "composer install && npm install",
+    "watch": "encore dev --watch"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.18.6",
