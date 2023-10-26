@@ -59,8 +59,8 @@ security:
     - { path: ^/api/(user), roles: ROLE_ADMIN, methods: ["POST", "PUT", "DELETE"] }
     - { path: ^/api/(teams), roles: ROLE_ADMIN, methods: ["POST", "PUT", "DELETE"] }
     - { path: ^/api/(articles), roles: ROLE_ADMIN, methods: ["POST", "PUT", "DELETE"] }
-    - { path: ^/api/(Movies), roles: ROLE_ADMIN, methods: ["POST", "PUT", "DELETE"] }
-    - { path: ^/api/(News), roles: ROLE_ADMIN, methods: ["POST", "PUT", "DELETE"] }
+    - { path: ^/api/(movies), roles: ROLE_ADMIN, methods: ["POST", "PUT", "DELETE"] }
+    - { path: ^/api/(news), roles: ROLE_ADMIN, methods: ["POST", "PUT", "DELETE"] }
     - { path: ^/api/(login|token/refresh), roles: PUBLIC_ACCESS }
 
 when@test:

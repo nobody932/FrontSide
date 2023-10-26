@@ -3,92 +3,101 @@ import React from "react";
 
 
 
+ function SignUp() {
+    return (
+        
+       <div class="flex flex-col justify-center py-12 sm:px-6 lg:px-8">
 
-export default function SignUp(){
-  
-   
-        <>
-    <section>
-        <div class="container flex items-center justify-center min-h-screen px-6 mx-auto">
-        <form class="w-full max-w-md">
-            <div class="flex justify-center mx-auto">
-            
-            </div>
-            
-            <div class="flex items-center justify-center mt-6">
-                <a href="#" class="w-1/3 pb-4 font-medium text-center text-gray-500 capitalize border-b dark:border-gray-400 dark:text-gray-300">
-                    sign in
-                </a>
+<div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+  <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+    <form method="POST" action="#">
+      <div>
+        <label class="block text-sm font-medium text-gray-700" for="username">
+          Username
+        </label>
+        <div class="mt-1">
+          <input type="text" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required="" autocomplete="username" name="username" id="username">
+        </div>
+      </div>
 
-                <a href="#" class="w-1/3 pb-4 font-medium text-center text-gray-800 capitalize border-b-2 border-blue-500 dark:border-blue-400 dark:text-white">
-                    sign up
-                </a>
-            </div>
+      <div class="mt-6">
+        <label class="block text-sm font-medium text-gray-700" for="email">
+          Email address
+        </label>
+        <div class="mt-1">
+          <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required="" autocomplete="email" type="email" name="email" id="email">
+        </div>
+      </div>
 
-            <div class="relative flex items-center mt-8">
-                <span class="absolute">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-3 text-gray-300 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
-                </span>
+      <div class="mt-6">
+        <label class="block text-sm font-medium text-gray-700" for="confirm-email">
+          Confirm Email address
+        </label>
+        <div class="mt-1">
+          <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required="" autocomplete="email" type="email" name="confirm-email" id="confirm-email">
+        </div>
+      </div>
 
-                <input type="text" class="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Username">
-            </div>
+      <div class="mt-6">
+        <label class="block text-sm font-medium text-gray-700" for="password">
+          Password
+        </label>
+          <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required="" autocomplete="current-password" type="password" name="password" id="password">
+      </div>
 
-            <label for="dropzone-file" class="flex items-center px-3 py-3 mx-auto mt-6 text-center bg-white border-2 border-dashed rounded-lg cursor-pointer dark:border-gray-600 dark:bg-gray-900">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-300 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-                </svg>
+      <div class="mt-6">
+        <label class="block text-sm font-medium text-gray-700" for="confirm-password">
+          Confirm Password
+        </label>
+        <div class="mt-1">
+          <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required="" autocomplete="current-password" type="password" name="confirm-password" id="confirm-password">
+        </div>
+      </div>
 
-                <h2 class="mx-3 text-gray-400">Profile Photo</h2>
+      <div class="mt-6">
+        <label class="block text-sm font-medium text-gray-700" for="dob">
+          Date of Birth
+        </label>
+        <div class="mt-1">
+          <input class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required="" type="date" name="dob" id="dob">
+        </div>
+      </div>
+      
+      <div class="flex items-center justify-center mt-6">
+<span class="mr-3 text-gray-700 font-medium">Gender:</span>
+<label class="inline-flex items-center">
+  <input type="radio" class="form-radio h-5 w-5 text-pink-600" name="gender" value="Male">
+  <span class="ml-2 text-gray-700">Male</span>
+</label>
+<label class="inline-flex items-center ml-6">
+  <input type="radio" class="form-radio h-5 w-5 text-purple-600" name="gender" value="Female">
+  <span class="ml-2 text-gray-700">Female</span>
+</label>
+</div>
 
-                <input id="dropzone-file" type="file" class="hidden" />
-            </label>
 
-            <div class="relative flex items-center mt-6">
-                <span class="absolute">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-3 text-gray-300 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                </span>
 
-                <input type="email" class="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Email address">
-            </div>
+      <div class="mt-6 flex items-center justify-between">
+        <div class="flex items-center">
+          <input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" type="checkbox" name="terms-and-condition" id="terms-and-condition">
+          <label class="ml-2 block text-sm text-gray-900" for="terms-and-condition">
+            I agree to the terms and conditions
+          </label>
+        </div>
+      </div>
 
-            <div class="relative flex items-center mt-4">
-                <span class="absolute">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-3 text-gray-300 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                    </svg>
-                </span>
+      <div class="mt-6">
+        <button class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" type="submit">
+          Sign up
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
 
-                <input type="password" class="block w-full px-10 py-3 text-gray-700 bg-white border rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Password">
-            </div>
+      );
+    }
+    
 
-            <div class="relative flex items-center mt-4">
-                <span class="absolute">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-3 text-gray-300 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                    </svg>
-                </span>
-
-                <input type="password" class="block w-full px-10 py-3 text-gray-700 bg-white border rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Confirm Password">
-            </div>
-
-            <div class="mt-6">
-                <button class="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
-                    Sign Up
-                </button>
-
-                <div class="mt-6 text-center ">
-                    <a href="#" class="text-sm text-blue-500 hover:underline dark:text-blue-400">
-                        Already have an account?
-                    </a>
-                </div>
-            </div>
-        </form>
-    </div>
-    </section>
-        </>
-};
-
+export default SignUp;

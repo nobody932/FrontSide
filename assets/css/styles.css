@@ -3,6 +3,31 @@
 @tailwind utilities;
 
 @layer components {
+  .gradient-background {
+    background: linear-gradient(
+      258deg,
+      #de0972,
+      #27d141,
+      #49203b,
+      #3e96aa,
+      #6acce7,
+      #7caa77
+    );
+    background-size: 360% 360%;
+    animation: gradient-animation 12s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
   .containblue {
     background: rgba(26, 152, 177, 0.5);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -17,6 +42,56 @@
     -webkit-backdrop-filter: blur(3px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  .css-selector {
+    background: linear-gradient(
+      136deg,
+      #838e85,
+      #90ace6,
+      #d2bd6a,
+      #d73b0c,
+      #cc9e2a,
+      #f0f3bc
+    );
+    background-size: 1200% 1200%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+  }
+
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 62% 0%;
+    }
+    50% {
+      background-position: 39% 100%;
+    }
+    100% {
+      background-position: 62% 0%;
+    }
+  }
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 62% 0%;
+    }
+    50% {
+      background-position: 39% 100%;
+    }
+    100% {
+      background-position: 62% 0%;
+    }
+  }
+  @keyframes AnimationName {
+    0% {
+      background-position: 62% 0%;
+    }
+    50% {
+      background-position: 39% 100%;
+    }
+    100% {
+      background-position: 62% 0%;
+    }
   }
 
   .contain {
