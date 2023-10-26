@@ -16,10 +16,10 @@ class Movies
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $titles = null;
+    private ?string $title = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $part = null;
+    private ?string $movie = null;
 
     #[ORM\Column(length: 255)]
     private ?string $description = null;
@@ -32,26 +32,26 @@ class Movies
         return $this->id;
     }
 
-    public function getTitles(): ?string
+    public function getTitle(): ?string
     {
-        return $this->titles;
+        return $this->title;
     }
 
-    public function setTitles(string $titles): static
+    public function setTitle(string $title): static
     {
-        $this->titles = $titles;
+        $this->title = $title;
 
         return $this;
     }
 
-    public function getPart(): ?string
+    public function getMovie(): ?string
     {
-        return $this->part;
+        return $this->movie;
     }
 
-    public function setPart(string $part): static
+    public function setMovie(string $movie): static
     {
-        $this->part = $part;
+        $this->movie = $movie;
 
         return $this;
     }

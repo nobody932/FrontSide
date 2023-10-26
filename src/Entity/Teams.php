@@ -25,7 +25,7 @@ class Teams
     private ?string $title = null;
 
     #[ORM\Column(length: 255, )]
-    private ?string $pictures = null;
+    private ?string $video = null;
 
     public function getId(): ?int
     {
@@ -68,14 +68,14 @@ class Teams
         return $this;
     }
 
-    public function getPictures(): ?string
+    public function getVideo(): ?string
     {
-        return $this->pictures;
+        return $this->video;
     }
 
-    public function setPictures(?string $pictures): static
+    public function setVideo(?string $video): static
     {
-        $this->pictures = $pictures;
+        $this->video = $video;
 
         return $this;
     }

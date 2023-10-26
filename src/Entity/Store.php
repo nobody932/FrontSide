@@ -16,13 +16,13 @@ class Store
     private ?int $id = null;
 
     #[ORM\Column(length: 255, nullable: true)]
-    private ?string $StorePicture = null;
+    private ?string $store_picture = null;
 
     #[ORM\Column(length: 255, nullable: true)]
-    private ?string $Adress = null;
+    private ?string $adress = null;
 
     #[ORM\Column(length: 255, nullable: true)]
-    private ?string $StoreName = null;
+    private ?string $store_name = null;
 
     public function getId(): ?int
     {
@@ -31,36 +31,36 @@ class Store
 
     public function getStorePicture(): ?string
     {
-        return $this->StorePicture;
+        return $this->store_picture;
     }
 
-    public function setStorePicture(?string $StorePicture): static
+    public function setStorePicture(string $store_picture): static
     {
-        $this->StorePicture = $StorePicture;
+        $this->store_picture = $store_picture;
 
         return $this;
     }
 
     public function getAdress(): ?string
     {
-        return $this->Adress;
+        return $this->adress;
     }
 
-    public function setAdress(?string $Adress): static
+    public function setAdress(?string $adress): static
     {
-        $this->Adress = $Adress;
+        $this->adress = $adress;
 
         return $this;
     }
 
     public function getStoreName(): ?string
     {
-        return $this->StoreName;
+        return $this->store_name;
     }
 
-    public function setStoreName(?string $StoreName): static
+    public function setStoreName(?string $store_name): static
     {
-        $this->StoreName = $StoreName;
+        $this->store_name = $store_name;
 
         return $this;
     }
