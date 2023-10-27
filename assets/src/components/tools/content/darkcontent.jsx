@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import BgImageHome from "../bg-images/home-bg-img";
+
 
 const ImgStyle = {
   backgroundImage:
@@ -11,7 +11,7 @@ const ImgStyle = {
 
 function DarkContentA(props) {
   return (
-    <section className=" body-font bg-gray-900">
+    <section className=" body-font py-10  ml-7 flex-auto ">
       <div></div>
       <div
         className="container w-full px-5 py-24 mx-auto" style={{

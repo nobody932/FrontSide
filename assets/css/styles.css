@@ -3,6 +3,122 @@
 @tailwind utilities;
 
 @layer components {
+  .gradientt {
+    background: linear-gradient(
+      194deg,
+      deepskyblue,
+      #59d4e9,
+      #e9bf59,
+      #e9bf59,
+      #c22a2b,
+      #c22a2b,
+      #347447,
+      #347447,
+      #347447
+    );
+    background-size: 540% 540%;
+    animation: gradient-animation 81s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .gradient-backgroundd {
+    background: linear-gradient(
+      128deg,
+      deepskyblue,
+      #59d4e9,
+      #e9bf59,
+      #e9bf59,
+      #3c674e,
+      #3c674e
+    );
+    background-size: 360% 360%;
+    animation: gradient-animation 42s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .gradient {
+    background: linear-gradient(
+      124deg,
+      blue,
+      #ccbdbd,
+      #bcac66,
+      #53524e,
+      #9d6511,
+      #9d6511,
+      #88847d,
+      #7d8188,
+      #0033ff
+    );
+    background-size: 540% 540%;
+    animation: gradient-animation 72s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .gradient-back {
+    background: linear-gradient(
+      124deg,
+      blue,
+      #ccbdbd,
+      #bcac66,
+      #53524e,
+      #9d6511
+    );
+    background-size: 300% 300%;
+    animation: gradient-animation 30s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
   .gradient-background {
     background: linear-gradient(
       258deg,
@@ -188,6 +304,21 @@ video {
 }
 .header {
   position: relative;
-  color: white;
+
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+  background-image: linear-gradient(
+    to bottom,
+    #121212,
+    #2d2731,
+    #513c4f,
+    #7c5067,
+    #aa6579,
+    #c57576,
+    #d98b71,
+    #e4a46e,
+    #d0be70,
+    #b1d68a,
+    #89ebb8,
+    #5ffbf1
+  );
 }

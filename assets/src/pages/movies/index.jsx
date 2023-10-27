@@ -9,7 +9,6 @@ import { MovieContext } from "../../components/context/movieProvider";
 import ShowCh from "./country/ch";
 import ShowJp from "./country/jp";
 import DarkHeaderD from "../../components/tools/headermob/header";
-import PaginationExampleShorthand from "../../components/tools/pagination/pagi";
 import DarkTestimonialA from "../../components/tools/testimonial/darktest";
 const Movies = () => {
   const { movies, setMovies } = useContext(MovieContext);
@@ -62,7 +61,7 @@ const Movies = () => {
   return (
     <>
       <DarkHeaderD />
-      <section className="min-h-screen ">
+      <section className="gradient-background min-h-screen ">
         <div>
           <video
             className="w-screen"
@@ -74,7 +73,7 @@ const Movies = () => {
             src="https://vod-progressive.akamaized.net/exp=1698231187~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3639%2F24%2F618198834%2F2869513818.mp4~hmac=01df78177c035613e06ff80f4781e3135ef38529c9776cc6ee87301e42755507/vimeo-prod-skyfire-std-us/01/3639/24/618198834/2869513818.mp4"
             type="video/mp4"
           > </video>
-          <div className="py-10 bg-slate-800"> </div>
+          <div className="py-10  bg-slate-800"> </div>
           <DarkTestimonialA />
         </div>
       </section>
@@ -88,7 +87,7 @@ const Movies = () => {
           }} className="flex flex-col ">
             <div className="py-10 bg-slate-800"> </div>
           <div>
-            <div className="grid grid-cols-2 ">
+            <div className="grid  grid-cols-2 ">
               {countrys.map((country) => {
                 return (
                   <div>
@@ -105,7 +104,7 @@ const Movies = () => {
               })}
             </div>
           </div>
-          <div className="col-span-3">
+          <div className=" contain my-10 col-span-3 ">
             {selectCountry.fr ? <ShowFr /> : null}
             {selectCountry.es ? <ShowEs /> : null}
             {selectCountry.ch ? <ShowCh /> : null}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import axios from "axios";
 import process from "process";
 import NavBar from "../components/tools/navbar-des";
@@ -84,35 +85,52 @@ const Home = () => {
   return (
     <>
       <DarkHeaderD />
-      <section className="bg-amber-800 text-white">
+      <div className=""></div>
+      <section className=" bg-amber-800 gradientt px-10 text-white">
         <DarkContentA />
-        <h1 className="text-center font-extrabold py-8">
+        
+
+        <section class="m-10  items-center shadow py-10 dark:bg-gray-800">  <h1 className="text-center font-extrabold py-8">
           <div>Récents ajouts:</div>
         </h1>
+          <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
+        
+            <a
+              href="#"
+              class="text-gray-800 transition-colors duration-300 transform dark:text-gray-200 border-b-2 border-red-500 mx-1.5 sm:mx-6"
+            >
+              Articles
+            </a>
 
-        <div className="text-center flex flex-col font-serif">
-          <ul>
-            <div className=" grid grid-cols-6 font-light py-12">
-              <button type="button" onClick={alert}>
-                {" "}
-                <li>Articles</li>
-              </button>
-              <button type="button">
-                {" "}
-                <li>News</li>
-              </button>
-              <button type="button" onClick={alert}>
-                <li>Part</li>
-              </button>
-              <button type="button" onClick={alert}>
-                <li>Equipes</li>
-              </button>
-              <button type="button" onClick={alert}>
-                <li>Magasin</li>
-              </button>
-            </div>
-          </ul>
-        </div>
+            <a
+              href="#"
+              class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-red-500 mx-1.5 sm:mx-6"
+            >
+              News
+            </a>
+
+            <a
+              href="#"
+              class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-red-500 mx-1.5 sm:mx-6"
+            >
+              Movies
+            </a>
+
+            <a
+              href="#"
+              class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-red-500 mx-1.5 sm:mx-6"
+            >
+              Teams
+            </a>
+
+            <a
+              href="#"
+              class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-red-500 mx-1.5 sm:mx-6"
+            >
+              Stores
+            </a>
+          </div>
+        </section>
 
         <App />
       </section>{" "}

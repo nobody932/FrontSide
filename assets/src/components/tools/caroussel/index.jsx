@@ -1,5 +1,9 @@
 import React from "react"
 
+const CarousselA=()=>{
+  return (
+  <>
+
 <div className="carousel w-full">
   <div id="slide1" className="carousel-item relative w-full">
     <img src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" />
@@ -30,3 +34,7 @@ import React from "react"
     </div>
   </div>
 </div>
+  </>
+  )
+}
+export default CarousselA
