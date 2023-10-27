@@ -11,16 +11,16 @@ const ImgStyle = {
 
 function DarkContentA(props) {
   return (
-    <section className=" body-font py-10  ml-7 flex-auto ">
+    <section className="  body-font py-10  ml-7 flex-auto ">
       <div></div>
       <div
-        className="container w-full px-5 py-24 mx-auto" style={{
+        className="contain w-full px-5 py-24 mx-auto" style={{
           backgroundImage:
             ' url("https://images.unsplash.com/photo-1496886077455-6e206da90837?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
         
         }}
       >
-        <div className="flex flex-col text-center w-full mb-20">
+        <div className=" glass flex flex-col text-center w-full mb-20">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-red-500 ">
             Bienvenue Sur Front-Side
           </h1>
@@ -86,8 +86,6 @@ function DarkContentA(props) {
               Neptune
             </h2>
             <p className="leading-relaxed text-base mb-4 text-slate-500">
-              Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-              hexagon disrupt edison bulbche.
             </p>
             <a
               href

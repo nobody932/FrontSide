@@ -88,13 +88,13 @@ const Home = () => {
       <div className=""></div>
       <section className=" bg-amber-800 gradientt px-10 text-white">
         <DarkContentA />
-        
 
-        <section class="m-10  items-center shadow py-10 dark:bg-gray-800">  <h1 className="text-center font-extrabold py-8">
-          <div>Récents ajouts:</div>
-        </h1>
+        <section class="m-10  items-center shadow py-10 dark:bg-gray-800">
+          {" "}
+          <h1 className="text-center font-extrabold py-8">
+            <div>Récents ajouts:</div>
+          </h1>
           <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
-        
             <a
               href="#"
               class="text-gray-800 transition-colors duration-300 transform dark:text-gray-200 border-b-2 border-red-500 mx-1.5 sm:mx-6"

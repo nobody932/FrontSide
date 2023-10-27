@@ -6,7 +6,7 @@ function DarkHeaderD(props) {
     <header className="text-gray-900 header body-font">
       <div style={{
         backgroundImage:
-          ' url("https://media.istockphoto.com/id/96420437/fr/vectoriel/vari%C3%A9t%C3%A9-de-dessins-et-crayonnages-personnes.jpg?s=612x612&w=0&k=20&c=3kDb_8bCOo63SNkiKMdhD4UpDXQRmq4hd3ddTxYfuPc=)',
+          ' url("https://media.istockphoto.com/id/696544488/fr/photo/patineur-de-sauter-sur-son-skate-au-skatepark.jpg?s=612x612&w=0&k=20&c=pfAfALOraBbxes0GV4HvSl9kE3HuvdE1U8bx1kO12D0=)',
       }} className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a
           href="/"
