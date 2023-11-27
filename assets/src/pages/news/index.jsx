@@ -68,7 +68,7 @@ const News = () => {
               return (
                 <div className="flex justify-center py-8 contain ">
                   <div className="">
-                    
+                    <CenteredTabs/>
                     <button
                       className=" text-red-700 p-1 my-3 bg-amber-200"
                       onClick={() => {

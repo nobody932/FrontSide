@@ -5,6 +5,7 @@ import FooterDes from "../components/layouts/desktop";
 import AOS from "../components/tools/aos/aos";
 import { PaginationExamplePagination } from "semantic-ui-react";
 import ContentArticle from "../components/tools/content/contentarticles";
+import Accordion from "../components/tools/cards/Cardtroifoi";
 
 const Articles = () => {
   const [articles, setArticles] = useState([]);
@@ -33,14 +34,14 @@ const Articles = () => {
         }}
       >
         <ContentArticle/>
-        <div className="grid grid-cols-3 items-center mx-5 space-x-3 ">
+        <div className="grid grid-cols-3  items-center mx-5 space-x-3 ">
           {articles.map((article) => {
             return (
               <div
                 key={article.id}
                 className="bg-purple-700 card flex flex-col justify-center p-10 border lg"
               >
-                <div className="artboard phone-1"></div>
+                <div className="artboard phone-1 space-x-10 space-y-10"></div>
                 <img src={article.image} alt="" />
                 <h1 className="text-white italic font-bold">
                   Titre : {article.title}
