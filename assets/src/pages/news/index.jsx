@@ -7,11 +7,13 @@ import ShowPl from "./produits/pl";
 import ShowChs from "./produits/chs";
 import { NewsContext } from "../../components/context/newsProvider";
 import ShowHw from "./produits/hw";
+import DarkHeaderD from "../../components/tools/headermob/header";
 
 const News = () => {
   const { news, setNews } = useContext(NewsContext); //objet
 
-  const [selectProduits, setSelectProduits] = useState({ //tableau
+  const [selectProduits, setSelectProduits] = useState({
+    //tableau
     pl: false,
     hw: false,
     chs: false,
@@ -58,21 +60,24 @@ const News = () => {
 
   return (
     <>
-      <NavBar />
-      <main className="min-h-screen">
-        <section className="grid grid-cols-4">
-          <div className="grid grid-cols-2 bg-slate-700 ">
+       <DarkHeaderD />
+      <main className="min-h-screen containblue  my-10">
+        <section className="flex flex-col contain ">
+          <div className=" grid grid-col  bg-slate-700 ">
             {produits.map((produits) => {
               return (
-                <div>
-                  <button
-                    className=" text-red-700 p-1 my-3 bg-amber-200"
-                    onClick={() => {
-                      SelectProduits(produits);
-                    }}
-                  >
-                    {produits}
-                  </button>
+                <div className="flex justify-center py-8 contain ">
+                  <div className="">
+                    
+                    <button
+                      className=" text-red-700 p-1 my-3 bg-amber-200"
+                      onClick={() => {
+                        SelectProduits(produits);
+                      }}
+                    >
+                      {produits}
+                    </button>
+                  </div>
                 </div>
               );
             })}
@@ -80,7 +85,7 @@ const News = () => {
           <div className="col-span-3">
             {selectProduits.pl ? <ShowPl /> : null}
             {selectProduits.chs ? <ShowChs /> : null}
-            {selectProduits.hw ?<ShowHw /> : null }
+            {selectProduits.hw ? <ShowHw /> : null}
           </div>
         </section>
       </main>

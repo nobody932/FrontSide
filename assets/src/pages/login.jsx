@@ -1,11 +1,11 @@
 import React from "react";
 import axios from "axios";
-import LightCTAB from "../components/tools/loginui/loginUi";
+
 
 const Login = () => {
   return (
     <>
-      <section className="bg-orange-700 ">
+      <section className="gradiant-background ">
         {" "}
      
         <div>

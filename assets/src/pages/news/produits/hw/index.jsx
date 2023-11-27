@@ -5,7 +5,7 @@ const ShowHw = () =>{
     
 const{news,setNews} = useContext(NewsContext)
 return (
-    <div className="bg-cyan-400">
+    <div className="bg-cyan-400 space-y-6">
       <div className="grid grid-cols-3 py-5">
         {news.map((news) => {
           // console.log(movie.produits);

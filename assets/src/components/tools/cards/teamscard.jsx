@@ -6,12 +6,11 @@ function DarkTeamA(props) {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
-            Our Team
+           Les equipes
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify, subway tile poke farm-to-table. Franzen you probably
-            haven&apos;t heard of them.
+           Le skate rapproche les gens de toute origine, de tout genre pour 
+           un seul objectif faire les tricks les plus spétaculaires et originaux   
           </p>
         </div>
         <div className="flex flex-wrap -m-2">
@@ -24,9 +23,9 @@ function DarkTeamA(props) {
               />
               <div className="flex-grow">
                 <h2 className="text-white title-font font-medium">
-                  Holden Caulfield
+                Team Supreme
                 </h2>
-                <p className="text-gray-600">UI Designer</p>
+                <p className="text-gray-600">En savoir plus </p>
               </div>
             </div>
           </div>
@@ -39,9 +38,9 @@ function DarkTeamA(props) {
               />
               <div className="flex-grow">
                 <h2 className="text-white title-font font-medium">
-                  Henry Letham
+                  Team Huf
                 </h2>
-                <p className="text-gray-600">CTO</p>
+                <p className="text-gray-600">En savoir plus</p>
               </div>
             </div>
           </div>
@@ -54,9 +53,9 @@ function DarkTeamA(props) {
               />
               <div className="flex-grow">
                 <h2 className="text-white title-font font-medium">
-                  Oskar Blinde
+                  Team WastedParis 
                 </h2>
-                <p className="text-gray-600">Founder</p>
+                <p className="text-gray-600">En savoir plus </p>
               </div>
             </div>
           </div>
@@ -68,8 +67,8 @@ function DarkTeamA(props) {
                 src="https://dummyimage.com/90x90"
               />
               <div className="flex-grow">
-                <h2 className="text-white title-font font-medium">John Doe</h2>
-                <p className="text-gray-600">DevOps</p>
+                <h2 className="text-white title-font font-medium">Teams Palace</h2>
+                <p className="text-gray-600">En savoir plus </p>
               </div>
             </div>
           </div>
@@ -82,9 +81,9 @@ function DarkTeamA(props) {
               />
               <div className="flex-grow">
                 <h2 className="text-white title-font font-medium">
-                  Martin Eden
+                  Team Nike SB
                 </h2>
-                <p className="text-gray-600">Software Engineer</p>
+                <p className="text-gray-600">En savoir plus</p>
               </div>
             </div>
           </div>
@@ -97,9 +96,9 @@ function DarkTeamA(props) {
               />
               <div className="flex-grow">
                 <h2 className="text-white title-font font-medium">
-                  Boris Kitua
+                Team HOCKEY 
                 </h2>
-                <p className="text-gray-600">UX Researcher</p>
+                <p className="text-gray-600">En savoir plus </p>
               </div>
             </div>
           </div>

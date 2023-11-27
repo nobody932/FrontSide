@@ -5,8 +5,9 @@ const ShowPl = () => {
   const { news, setNews } = useContext(NewsContext);
 
   return (
-    <div className="bg-cyan-400">
-      <div className="grid grid-cols-2">
+    <div className="bg-cyan-400 ">
+      <img src="/images/skate.jpg" alt="" />
+      <div className="grid grid-cols-2 space-x-10 space-y-10">
         {news.map((news) => {
           // console.log(news.produits);
           if (news.produits === "Planche") {

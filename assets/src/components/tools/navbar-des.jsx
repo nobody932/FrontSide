@@ -3,13 +3,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const NavBar = () => (
-  <nav className=" gradient-background  bg-red-800 py-3 flex justify-center ">
+  <nav className=" gradient-background2  bg-red-800 py-3 flex justify-center text-neutral-200 ">
     <ul>
       <div>
         <img
-          src="/https://www.shutterstock.com/image-vector/funny-skateboard-skate-park-vintage-600w-1975970261.jpg"
-          height={100}
-          width={300}
+          src=""
+          
         />
       </div>
       <div className="grid grid-cols-7 space-x-5 text-center ">

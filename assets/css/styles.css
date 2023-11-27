@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+
+  
+
   .gradientt {
     background: linear-gradient(
       194deg,
@@ -321,4 +324,22 @@ video {
     #89ebb8,
     #5ffbf1
   );
+}
+
+.gradient-background2 {
+  background: linear-gradient(300deg,deepskyblue,darkviolet,blue);
+  background-size: 180% 180%;
+  animation: gradient-animation 30s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

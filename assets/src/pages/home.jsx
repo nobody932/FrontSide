@@ -9,6 +9,7 @@ import { Header } from "semantic-ui-react";
 import DarkHeaderD from "../components/tools/headermob/header";
 import App from "../components/tools/cards/homecard";
 import DarkContentA from "../components/tools/content/darkcontent";
+import Articles from "../pages/articles"
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -96,35 +97,35 @@ const Home = () => {
           </h1>
           <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
             <a
-              href="#"
+              href="/articles"
               class="text-gray-800 transition-colors duration-300 transform dark:text-gray-200 border-b-2 border-red-500 mx-1.5 sm:mx-6"
             >
               Articles
             </a>
 
             <a
-              href="#"
+              href="/news"
               class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-red-500 mx-1.5 sm:mx-6"
             >
               News
             </a>
 
             <a
-              href="#"
+              href="/movies"
               class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-red-500 mx-1.5 sm:mx-6"
             >
               Movies
             </a>
 
             <a
-              href="#"
+              href="/teams"
               class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-red-500 mx-1.5 sm:mx-6"
             >
               Teams
             </a>
 
             <a
-              href="#"
+              href="/stores"
               class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-red-500 mx-1.5 sm:mx-6"
             >
               Stores
