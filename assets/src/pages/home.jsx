@@ -88,7 +88,7 @@ const Home = () => {
       <DarkHeaderD />
       <div className=""></div>
       <section className=" bg-amber-800 gradientt px-10 text-white">
-        <DarkContentA />
+         <DarkContentA /> 
 
         <section class="m-10  items-center shadow py-10 dark:bg-gray-800">
           {" "}

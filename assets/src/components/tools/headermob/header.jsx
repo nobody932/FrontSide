@@ -7,10 +7,8 @@ import MenuListComposition from "../Menu/menu";
 function DarkHeaderD(props) {
   return (
     <header className="text-gray-900 header body-font">
-      <div style={{
-        backgroundImage:
-          ' url("https://media.istockphoto.com/id/696544488/fr/photo/patineur-de-sauter-sur-son-skate-au-skatepark.jpg?s=612x612&w=0&k=20&c=pfAfALOraBbxes0GV4HvSl9kE3HuvdE1U8bx1kO12D0=)',
-      }} className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <div
+      className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a
           href="/"
           className="flex title-font font-medium items-center uppercase text-red-600 mb-4 md:mb-0"
